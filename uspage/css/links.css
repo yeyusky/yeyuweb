@@ -36,10 +36,12 @@ body {
   float: left;
 }
 .nav ul li:hover {
-  border-bottom: 2px solid #ff6600;
+  
 }
 .nav ul li a {
-  line-height: 70px;
+  display:block;
+  height: 68px;
+  line-height: 68px;
   text-align: center;
   text-decoration: none;
   font-size: 12px;
@@ -47,6 +49,7 @@ body {
 }
 .nav ul li a:hover {
   color: #ff6600;
+  border-bottom: 2px solid #ff6600;
 }
 .list {
   width: 120px;
