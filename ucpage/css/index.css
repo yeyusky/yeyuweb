@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+}
+#header {
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+}
+.logo {
+  width: 270px;
+  height: 70px;
+  float: left;
+}
+.logo img {
+  display: block;
+  padding: 15px 0;
+}
+.nav {
+  width: 400px;
+  height: 70px;
+  margin-left: 100px;
+  float: left;
+}
+.nav ul {
+  width: 400px;
+  height: 70px;
+  float: left;
+}
+.nav ul li {
+  height: 70px;
+  list-style: none;
+  margin: 0 25px;
+  float: left;
+}
+.nav ul li:hover {
+  
+}
+.nav ul li a {
+  display:block;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+}
+.nav ul li a:hover {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+}
+.list {
+  width: 120px;
+  height: 30px;
+  float: left;
+}
+.list-fg {
+  color: #000;
+  font-size: 10px;
+  line-height: 30px;
+  float: left;
+}
+.list a {
+  float: left;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  color: #000;
+  font-size: 10px;
+  text-decoration: none;
+}
+#pic {
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+#pic .pic-btn {
+  width: 100%;
+  height: 270px;
+}
+#pic .pic-btn li{
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  float: left;
+  list-style: none;
+  left: 0;
+  transition: all 0.5s;
+}
+#pic .pic-btn li img{
+  width: 100%;
+  height: 270px;
+}
+#pic .pic-btn li.on{
+}
+#btn{
+  width: 60px;
+  height: 18px;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 50%;
+  left: -25px;
+}
+#btn span{
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  float: left;
+  margin: 0 5px;
+  background-image: url(../images/scrolldot2.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#btn span.light{
+  background-image: url(../images/scrolldot1.png);
+  background-repeat: no-repeat;
+}
+/* .sqbtn1 {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-image: url(../images/scrolldot1.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.sqbtn2 {
+  float: right;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-image: url(../images/scrolldot2.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+} */
+#container {
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.con-item1,
+.con-item2,
+.con-item3,
+.con-item4 {
+  width: 250px;
+  height: 200px;
+  float: left;
+}
+.con-item1 .item1 {
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  margin: 0 60px;
+  background-image: url(../images/ico_safe.png);
+}
+.con-item2 .item2 {
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  margin: 0 60px;
+  background-image: url(../images/ico_pay.png);
+}
+.con-item3 .item3 {
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  margin: 0 60px;
+  background-image: url(../images/ico_ucbrowser.png);
+}
+.con-item4 .item4 {
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  margin: 0 60px;
+  background-image: url(../images/ico_game.png);
+}
+.con-item1 p,
+.con-item2 p,
+.con-item3 p,
+.con-item4 p {
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  font-size: 14px;
+}
+.con-list1 {
+  width: 110px;
+  height: 30px;
+  margin: 0 auto;
+}
+.con-list1 a {
+  font-size: 12px;
+  color: #0050b4;
+  float: left;
+  line-height: 30px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  display: block;
+  text-decoration: none;
+}
+.list1-fk {
+  float: left;
+  width: 10px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+}
+.con-list2 {
+  width: 110px;
+  height: 30px;
+  margin: 0 auto;
+}
+.con-list2 a {
+  font-size: 12px;
+  color: #0050b4;
+  float: left;
+  line-height: 30px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  display: block;
+  text-decoration: none;
+}
+.list2-fk {
+  float: left;
+  width: 10px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+}
+#footer {
+  width: 100%;
+  height: 135px;
+  background-color: #333333;
+  margin-top: 100px;
+}
+.foot-desc {
+  width: 100%;
+  height: 45px;
+  padding: 45px 0;
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+}

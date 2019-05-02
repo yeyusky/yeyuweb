@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+}
+#header {
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+}
+.logo {
+  width: 270px;
+  height: 70px;
+  float: left;
+}
+.logo img {
+  display: block;
+  padding: 15px 0;
+}
+.nav {
+  width: 400px;
+  height: 70px;
+  margin-left: 100px;
+  float: left;
+}
+.nav ul {
+  width: 400px;
+  height: 70px;
+  float: left;
+}
+.nav ul li {
+  height: 70px;
+  list-style: none;
+  margin: 0 25px;
+  float: left;
+}
+.nav ul li:hover {
+  
+}
+.nav ul li a {
+  display:block;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+}
+.nav ul li a:hover {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+}
+.list {
+  width: 120px;
+  height: 30px;
+  float: left;
+}
+.list-fg {
+  color: #000;
+  font-size: 10px;
+  line-height: 30px;
+  float: left;
+}
+.list a {
+  float: left;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  color: #000;
+  font-size: 10px;
+  text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 30px 0;
+}
+.containar{
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+#item1{
+    width: 1000px;
+    position: relative;
+}
+#item1 h1{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    margin-left: 25px;
+}
+#item1 .zuo{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 65px;
+    background-image: url(../images/zuo.png);
+}
+#item1 .you{
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background-image: url(../images/you.png);
+}
+#item1 li{
+    width: 1000px;
+    height: 310px;
+    display: none;
+}
+#item1 li img{
+    width: 230px;
+    height: 310px;
+    margin: 0 0 0 15px;
+    float: left;
+    padding: 0;
+}
+#item1 li.on{
+  display: block;
+}
+.item2{
+    width: 1000px;
+    margin-top: 10px;
+}
+.item2 h1{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    margin-left: 25px;
+}
+.item2-pic{
+    width: 1000px;
+}
+.pic1{
+    width: 230px;
+    height: 175px;
+    margin: 0 0 20px 15px;
+    float: left;
+    padding: 0;
+}
+#footer {
+  width: 100%;
+  height: 135px;
+  background-color: #333333;
+}
+.foot-desc {
+  width: 100%;
+  height: 45px;
+  padding: 45px 0;
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+}

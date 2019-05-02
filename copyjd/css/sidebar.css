@@ -1,0 +1,118 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bannar{
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    right: 0;
+    bottom: 0;
+    border-right: 10px solid #575656;
+}
+.bannar .center{
+    position: absolute;
+    width: 40px;
+    height: 224px;
+    margin-top: -112px;
+    right: -10px;
+    top: 50%;
+}
+.bannar .center ul{
+    width: 40px;
+    height: 224px;
+}
+.bannar .center ul li{
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin-bottom: 2px;
+}
+.bannar .center ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 30px;
+    background-color: #575656;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;  
+    z-index: 100;
+}
+.bannar .center ul li a i{
+    display: block;
+    width: 40px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    background: url(../images/toolbars.png) no-repeat left center;   
+}
+.bannar .center ul li a i.icon1{
+    background-position: -88px -176px;
+}
+.bannar .center ul li a i.icon2{
+    background-position: -50px -2px;
+}
+.bannar .center ul li a i.icon3{
+    background-position: -50px -52px;
+}
+.bannar .center ul li a i.icon4{
+    background-position: -50px -102px;
+}
+.bannar .center ul li a i.icon5{
+    background-position: -190px -153px;
+}
+.bannar .center ul li a i.icon6{
+    background-position: -50px -152px;
+}
+.bannar .center ul li a i.icon7{
+    background-position: -50px -303px;
+}
+.bannar .center ul li span{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    right: -100px;
+    top: 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: #575656;
+    border-radius: 5px 0 0 5px;
+    z-index: 10;
+}
+.bannar #top{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    bottom: 0;
+    right: -10px;
+    background-color: #575656;
+    border-radius: 5px 0 0 5px;    
+}
+.bannar #top a{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    background-color: #575656;
+    background: url(../images/toolbars.png) no-repeat left center;
+    background-position: -50px -252px;   
+    cursor: pointer; 
+    z-index: 100;
+}
+.bannar #top span{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    right: -100px;
+    top: 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: #575656;
+    border-radius: 5px 0 0 5px;
+    z-index: 10;
+}
