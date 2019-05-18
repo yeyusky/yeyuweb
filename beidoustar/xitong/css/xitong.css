@@ -1,0 +1,242 @@
+/* 主体样式 */
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fff;
+}
+/* 左侧导航样式 */
+#main .left-navbar {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+}
+#main .left-navbar p {
+  width: 185px;
+  height: 49px;
+  padding-left: 15px;
+  color: #005db5;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl {
+  width: 200px;
+  height: 250px;
+}
+#main .left-navbar #navbarUl li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl li a {
+  display: block;
+  width: 185px;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  padding-left: 15px;
+}
+#main .left-navbar #navbarUl li.navbaracT a {
+  color: #005db5;
+  background: url(../images/bz-arrowbg.png) no-repeat right center;
+}
+#main .left-navbar #navbarUl li a:hover {
+  color: #005db5;
+}
+/* 左侧导航样式 */
+#main .right-containar {
+  float: right;
+  width: 700px;
+  margin-right: 20px;
+  display: none;
+}
+#main .right-containar.xtactive{
+    display: block;
+}
+/* 右边系统顶部的title 页面切换样式 */
+#main .right-containar .xitong-title {
+  width: 700px;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+#main .right-containar .xitong-title p {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+#main .right-containar .xitong-title .xitong-link {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+#main .right-containar .xitong-title .xitong-link i {
+  display: block;
+  float: left;
+  width: 19px;
+  height: 18px;
+  margin: 16px 5px 0 0;
+  background: url(../images/cjwt-title.png) center center no-repeat;
+}
+#main .right-containar .xitong-title .xitong-link a {
+  font-size: 14px;
+  color: #666;
+}
+/* 右边系统顶部的title 页面切换样式 */
+
+/* 右侧系统介绍及增强系统公用的样式 */
+#main .right-containar .xtBox{
+    float: left;
+    width: 700px;
+}
+#main .right-containar .xtBox .desc{
+    width: 660px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #005db5;
+}
+#main .right-containar .xtBox .xtBox-con{
+    float: left;
+    width: 660px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+#main .right-containar .xtBox .xtBox-con p{
+    line-height: 22px;
+    font-size: 16px;
+    color: #333;
+    text-indent: 2em;
+    text-align:justify;
+    margin-bottom: 20px;
+}
+/* 右侧系统介绍样式 */
+
+/* 右侧星历星座及监测评估及官方下载公用的样式 */
+#main .right-containar .xlBox{
+    float: left;
+    width: 660px;
+    padding: 0 20px 20px 20px;
+    background-color: #f9f9f9;
+}
+#main .right-containar .xlBox ul{
+    float: left;
+    width: 660px;
+}
+#main .right-containar .xlBox ul li{
+    width: 660px;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px dashed #dddddd;
+}
+#main .right-containar .xlBox ul li a{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333;
+}
+#main .right-containar .xlBox ul li a:hover{
+    color: #005db5;
+}
+#main .right-containar .xlBox ul li span{
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #888888;
+}
+/* 右侧星历星座及监测评估及官方下载公用的样式 */
+
+/* 右侧官方下载样式 */
+#main .right-containar .xlBox ul li a.xzicon{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 15px 0 0 10px;
+    background: url(../images/xziconimg.png) center center no-repeat;
+}
+/* 右侧官方下载样式 */
+
+/* 右侧发射列表样式 */
+#main .right-containar .fsBox{
+    float: left;
+    width: 700px;
+}
+#main .right-containar .fsBox .desc{
+    width: 660px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #005db5;
+}
+#main .right-containar .fsBox .fsBox-img{
+    float: left;
+    width: 660px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+#main .right-containar .fsBox .fsBox-img img{
+    margin-left: 140px;
+}
+/* 右侧发射列表样式 */
+
+/* 右边系统底部page页码切换样式 */
+#main .right-containar .pageBox {
+  float: left;
+  width: 660px;
+  height: 30px;
+  line-height: 30px;
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+#main .right-containar .pageBox a {
+  padding: 4px 5px;
+  margin: 0 4px;
+  font-size: 16px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+#main .right-containar .pageBox a.homepage,
+#main .right-containar .pageBox a.lastpage {
+  background-color: #e0e0e0;
+}
+#main .right-containar .pageBox a.homepage:hover,
+#main .right-containar .pageBox a.lastpage:hover {
+  background-color: #005db5;
+  color: #fff;
+}
+#main .right-containar .pageBox a.homepage-img img,
+#main .right-containar .pageBox a.lastpage-img img {
+  position: relative;
+  top: 5px;
+}
+#main .right-containar .pageBox a.hover {
+  color: #b63414;
+}
+#main .right-containar .pageBox span {
+  padding-left: 20px;
+}
+/* 右边系统底部page页码切换样式 */
+/* 主体样式 */

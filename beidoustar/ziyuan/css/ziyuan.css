@@ -1,0 +1,232 @@
+/* 主体样式 */
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fff;
+}
+/* 左侧导航样式 */
+#main .left-navbar {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+}
+#main .left-navbar p {
+  width: 185px;
+  height: 49px;
+  padding-left: 15px;
+  color: #005db5;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl {
+  width: 200px;
+  height: 250px;
+}
+#main .left-navbar #navbarUl li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl li a {
+  display: block;
+  width: 185px;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  padding-left: 15px;
+}
+#main .left-navbar #navbarUl li.navbaracT a {
+  color: #005db5;
+  background: url(../images/bz-arrowbg.png) no-repeat right center;
+}
+#main .left-navbar #navbarUl li a:hover {
+  color: #005db5;
+}
+/* 左侧导航样式 */
+#main .right-containar {
+  float: right;
+  width: 700px;
+  margin-right: 20px;
+  display: none;
+}
+#main .right-containar.zyactive{
+    display: block;
+}
+/* 右边资源顶部的title 页面切换样式 */
+#main .right-containar .ziyuan-title {
+  width: 700px;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+#main .right-containar .ziyuan-title p {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+#main .right-containar .ziyuan-title .ziyuan-link {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+#main .right-containar .ziyuan-title .ziyuan-link i {
+  display: block;
+  float: left;
+  width: 19px;
+  height: 18px;
+  margin: 16px 5px 0 0;
+  background: url(../images/cjwt-title.png) center center no-repeat;
+}
+#main .right-containar .ziyuan-title .ziyuan-link a {
+  font-size: 14px;
+  color: #666;
+}
+/* 右边资源顶部的title 页面切换样式 */
+
+/* 右侧科普园地的样式 */
+#main .right-containar .zyBox{
+  float: left;
+  width: 660px;
+  padding: 0 20px 20px 20px;
+  background-color: #f9f9f9;
+}
+#main .right-containar .zyBox ul{
+  float: left;
+  width: 660px;
+}
+#main .right-containar .zyBox ul li{
+  width: 660px;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px dashed #dddddd;
+}
+#main .right-containar .zyBox ul li a{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+}
+#main .right-containar .zyBox ul li a:hover{
+  color: #005db5;
+}
+#main .right-containar .zyBox ul li span{
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #888888;
+}
+/* 右侧科普园地样式 */
+
+/* 右侧北斗图片样式 */
+#main .right-containar .tpBox{
+  float: left;
+  width: 660px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+#main .right-containar .tpBox ul{
+  width: 660px;
+}
+#main .right-containar .tpBox ul li{
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 140px;
+  margin: 0 30px 30px 0;
+}
+#main .right-containar .tpBox ul li:hover p{
+  background-color: #005db5;
+}
+#main .right-containar .tpBox ul li a{
+  display: block;
+  float: left;
+  width: 200px;
+  height: 140px;
+}
+#main .right-containar .tpBox ul li a img{
+  width: 200px;
+  height: 140px;
+}
+#main .right-containar .tpBox ul li p{
+  position: absolute;
+  display: block;
+  width: 180px;
+  height: 35px;
+  padding:  0 10px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#main .right-containar .tpBox ul li p a{
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#main .right-containar .tpBox ul li p i{
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 8px;
+  background: url(../images/spicon.png) 0 0 no-repeat;
+  cursor: pointer;
+}
+/* 右侧北斗图片样式 */
+
+/* 右边资源页面科普园地底部page页码切换样式 */
+#main .right-containar .pageBox {
+  float: left;
+  width: 700px;
+  height: 30px;
+  line-height: 30px;
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+#main .right-containar .pageBox a {
+  padding: 4px 5px;
+  margin: 0 4px;
+  font-size: 16px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+#main .right-containar .pageBox a.homepage,
+#main .right-containar .pageBox a.lastpage {
+  background-color: #e0e0e0;
+}
+#main .right-containar .pageBox a.homepage:hover,
+#main .right-containar .pageBox a.lastpage:hover {
+  background-color: #005db5;
+  color: #fff;
+}
+#main .right-containar .pageBox a.homepage-img img,
+#main .right-containar .pageBox a.lastpage-img img {
+  position: relative;
+  top: 5px;
+}
+#main .right-containar .pageBox a.hover {
+  color: #b63414;
+}
+#main .right-containar .pageBox span {
+  padding-left: 20px;
+}
+/* 右边资源页面科普园地底部page页码切换样式 */
+/* 主体样式 */

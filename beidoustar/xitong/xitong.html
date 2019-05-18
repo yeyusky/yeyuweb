@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>系统页面</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/xitong.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="top">
+        <div class="top-con">
+            <p>2018年11月23日 星期五</p>
+            <div class="top-left"></div>
+            <div class="top-right">
+                <a href="#">中文</a>
+                <div class="top-fg">|</div>
+                <a href="#">English</a>
+            </div>
+            <div class="weather" id="weabox">
+                <div id="box">
+                    <ul class="wea-demo1" id="demo1">
+                        <a href="javascript:;" title="点击查看北京天气情况"
+                            style="font-size: 14px; color: rgb(140, 181, 227);text-decoration: none;">
+                            <strong>今天：</strong>北京 小雨 <span style="color:#f00">9℃</span>～<span
+                                style="color:#4899be">3℃</span>南风
+                            <strong>明天：</strong>北京 多云 <span style="color:#f00">17℃</span>～<span
+                                style="color:#4899be">8℃</span>西北风 1级
+                            <strong>后天：</strong>北京 多云 <span style="color:#f00">18℃</span>～<span
+                                style="color:#4899be">5℃</span>西南风 2级
+                        </a>
+                    </ul>
+                    <ul class="wea-demo2" id="demo2"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <img src="images/logo.png" alt="北斗卫星导航" />
+        <div class="containar">
+            <div class="search-con">
+                <div class="select">全部</div>
+                <form class="search">
+                    <div class="search-icon"></div>
+                    <input class="search-in" type="text" value="搜索您需要的内容..." />
+                    <button class="btn1">搜索</button>
+                </form>
+            </div>
+            <a href="../login.html" target="_blank" class="btn2">邮箱登录</a>
+        </div>
+    </div>
+    <div id="nav">
+        <ul>
+            <li>
+                <a href="../index.html" target="_self">首页</a>
+                <i></i>
+                <div class="navdropdown" style="display: none; opacity: 0;">
+                </div>
+            </li>
+            <li>
+                <a href="../yaowen/yaowen.html" target="_self">要闻</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">新闻中心</a>
+                    <a href="#">官方公告</a>
+                    <a href="#">行业动态</a>
+                    <a href="#">国际动态</a>
+                    <a href="#">新闻专题</a>
+                </div>
+            </li>
+            <li>
+                <a href="../xitong/xitong.html" target="_self">系统</a>
+                <i class="barrow"></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">系统介绍</a>
+                    <a href="#">星历星座</a>
+                    <a href="#">监测评估</a>
+                    <a href="#">官方下载</a>
+                    <a href="#">增强系统</a>
+                    <a href="#">发射列表</a>
+                </div>
+            </li>
+            <li>
+                <a href="../chuantong/chuantong.html" target="_self">传统</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">北斗标识</a>
+                    <a href="#">北斗精神</a>
+                </div>
+            </li>
+            <li>
+                <a href="../yingyong/yingyong.html" target="_self">应用</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">基础产品</a>
+                    <a href="#">交通</a>
+                    <a href="#">农业</a>
+                    <a href="#">林业</a>
+                    <a href="#">渔业</a>
+                    <a href="#">公安</a>
+                    <a href="#">防灾减灾</a>
+                    <a href="#">特殊关爱</a>
+                    <a href="#">大众应用</a>
+                    <a href="#">电力</a>
+                    <a href="#">金融</a>
+                    <a href="#">产业</a>
+                </div>
+            </li>
+            <li>
+                <a href="../zhuanti/zhuanti.html" target="_self">专题</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">官方活动</a>
+                    <a href="#">北斗标准</a>
+                    <a href="#">政策法规</a>
+                    <a href="#">国际合作</a>
+                    <a href="#">知识产权</a>
+                    <a href="#">导航年会</a>
+                    <a href="#">新闻发布会</a>
+                </div>
+            </li>
+            <li>
+                <a href="../ziyuan/ziyuan.html" target="_self">资源</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">科普园地</a>
+                    <a href="#">北斗图片</a>
+                    <a href="#">北斗视频</a>
+                </div>
+            </li>
+            <li>
+                <a href="../help/help.html" target="_self">帮助</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">常见问题</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">ICD咨询邮箱</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="left-navbar">
+            <p>系统</p>
+            <ul id="navbarUl">
+                <li class="navbaracT"><a href="#">系统介绍</a></li>
+                <li><a href="#">星历星座</a></li>
+                <li><a href="#">监测评估</a></li>
+                <li><a href="#">官方下载</a></li>
+                <li><a href="#">增强系统 </a></li>
+                <li><a href="#">发射列表 </a></li>
+            </ul>
+        </div>
+        <div class="right-containar xtactive"> <!-- 系统页面--系统介绍 -->
+            <div class="xitong-title">
+                <p>系统介绍</p>
+                <div class="xitong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="xitong.html" target="_self">系统</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">系统介绍</a>
+                </div>
+            </div>
+            <div class="xtBox">
+                <div class="desc">北斗卫星导航系统介绍</div>
+                <div class="xtBox-con">
+                    <p>（一）概述</p> 
+                    <p>北斗卫星导航系统（以下简称北斗系统）是中国着眼于国家安全和经济社会发展需要，自主建设、独立运行的卫星导航系统，是为全球用户提供全天候、全天时、高精度的定位、导航和授时服务的国家重要空间基础设施。</p>  
+                    <p>随着北斗系统建设和服务能力的发展，相关产品已广泛应用于交通运输、海洋渔业、水文监测、气象预报、测绘地理信息、森林防火、通信时统、电力调度、救灾减灾、应急搜救等领域，逐步渗透到人类社会生产和人们生活的方方面面，为全球经济和社会发展注入新的活力。</p>  
+                    <p>卫星导航系统是全球性公共资源，多系统兼容与互操作已成为发展趋势。中国始终秉持和践行“中国的北斗，世界的北斗”的发展理念，服务“一带一路”建设发展，积极推进北斗系统国际合作。与其他卫星导航系统携手，与各个国家、地区和国际组织一起，共同推动全球卫星导航事业发展，让北斗系统更好地服务全球、造福人类。</p> 
+                    <p>（二）发展历程</p>
+                    <p>世纪后期，中国开始探索适合国情的卫星导航系统发展道路，逐步形成了三步走发展战略：2000年年底，建成北斗一号系统，向中国提供服务；2012年年底，建成北斗二号系统，向亚太地区提供服务；计划在2020年前后，建成北斗全球系统，向全球提供服务。2035年前还将建设完善更加泛在、更加融合、更加智能的综合时空体系。</p> 
+                    <p>（三）发展目标</p>  
+                    <p>建设世界一流的卫星导航系统，满足国家安全与经济社会发展需求，为全球用户提供连续、稳定、可靠的服务；发展北斗产业，服务经济社会发展和民生改善；深化国际合作，共享卫星导航发展成果，提高全球卫星导航系统的综合应用效益。</p>  
+                    <p>（四）建设原则</p>  
+                    <p>中国坚持“自主、开放、兼容、渐进”的原则建设和发展北斗系统。</p>  
+                    <p>——自主。坚持自主建设、发展和运行北斗系统，具备向全球用户独立提供卫星导航服务的能力。</p>  
+                    <p>——开放。免费提供公开的卫星导航服务，鼓励开展全方位、多层次、高水平的国际合作与交流。</p>  
+                    <p>——兼容。提倡与其他卫星导航系统开展兼容与互操作，鼓励国际合作与交流，致力于为用户提供更好的服务。</p>  
+                    <p>——渐进。分步骤推进北斗系统建设发展，持续提升北斗系统服务性能，不断推动卫星导航产业全面、协调和可持续发展。</p>  
+                    <p>（五）发展计划</p> 
+                    <p>目前，我国正在实施北斗三号系统建设。根据系统建设总体规划，2018年底，完成19颗卫星发射组网，完成基本系统建设，向全球提供服务；2020年前后，完成30颗卫星发射组网，全面建成北斗三号系统。</p>  
+                    <p>（六）基本组成</p>  
+                    <p>北斗系统由空间段、地面段和用户段三部分组成。</p>  
+                    <p>——空间段。北斗系统空间段由若干地球静止轨道卫星、倾斜地球同步轨道卫星和中圆地球轨道卫星三种轨道卫星组成混合导航星座。</p>  
+                    <p>——地面段。北斗系统地面段包括主控站、时间同步/注入站和监测站等若干地面站。</p>  
+                    <p>——用户段。北斗系统用户段包括北斗兼容其他卫星导航系统的芯片、模块、天线等基础产品，以及终端产品、应用系统与应用服务等。</p>  
+                    <p>（七）发展特色</p> 
+                    <p>北斗系统的建设实践，实现了在区域快速形成服务能力、逐步扩展为全球服务的发展路径，丰富了世界卫星导航事业的发展模式。</p>  
+                    <p>北斗系统具有以下特点：一是北斗系统空间段采用三种轨道卫星组成的混合星座，与其他卫星导航系统相比高轨卫星更多，抗遮挡能力强，尤其低纬度地区性能特点更为明显。二是北斗系统提供多个频点的导航信号，能够通过多频信号组合使用等方式提高服务精度。三是北斗系统创新融合了导航与通信能力，具有实时导航、快速定位、精确授时、位置报告和短报文通信服务五大功能。</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 系统页面--星历星座 -->
+            <div class="xitong-title">
+                <p>星历星座</p>
+                <div class="xitong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="xitong.html" target="_self">系统</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">星历星座</a>
+                </div>
+            </div>
+            <div class="xlBox">
+                <ul>
+                    <li>
+                        <a href="#">2019-123</a>
+                        <span>2019-05-03</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-122</a>
+                        <span>2019-05-02</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-121</a>
+                        <span>2019-05-01</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-120</a>
+                        <span>2019-04-30</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-119</a>
+                        <span>2019-04-29</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-118</a>
+                        <span>2019-04-28</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-117</a>
+                        <span>2019-04-27</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-116</a>
+                        <span>2019-04-26</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-115</a>
+                        <span>2019-04-25</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-114</a>
+                        <span>2019-04-24</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-113</a>
+                        <span>2019-04-23</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-112</a>
+                        <span>2019-04-22</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-111</a>
+                        <span>2019-04-21</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-110</a>
+                        <span>2019-04-20</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pageBox">
+                <a href="javascript:;" class="homepage">首页</a>
+                <a href="javascript:;" class="homepage-img">
+                    <img src="images/homepage.png" alt="home">
+                </a>
+                <a href="javascript:;" class="hover">1</a>
+                <a href="javascript:;" target="_self">2</a>
+                <a href="javascript:;" target="_self">3</a>
+                <a href="javascript:;" target="_self">4</a>
+                <a href="javascript:;" target="_self">5</a>
+                <a href="javascript:;" target="_self">6</a>
+                <a href="javascript:;" target="_self" class="lastpage-img">
+                    <img src="images/lastpage.png" alt="last">
+                </a>
+                <a href="javascript:;" target="_self" class="lastpage">尾页</a>
+                <span>共6页</span>
+            </div>
+        </div> 
+        <div class="right-containar"> <!-- 系统页面--监测评估 -->
+            <div class="xitong-title">
+                <p>监测评估</p>
+                <div class="xitong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="xitong.html" target="_self">系统</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">监测评估</a>
+                </div>
+            </div>
+            <div class="xlBox">
+                <ul>
+                    <li>
+                        <a href="#">2019-123</a>
+                        <span>2019-05-03</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-122</a>
+                        <span>2019-05-02</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-121</a>
+                        <span>2019-05-01</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-120</a>
+                        <span>2019-04-30</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-119</a>
+                        <span>2019-04-29</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-118</a>
+                        <span>2019-04-28</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-117</a>
+                        <span>2019-04-27</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-116</a>
+                        <span>2019-04-26</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-115</a>
+                        <span>2019-04-25</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-114</a>
+                        <span>2019-04-24</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-113</a>
+                        <span>2019-04-23</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-112</a>
+                        <span>2019-04-22</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-111</a>
+                        <span>2019-04-21</span>
+                    </li>
+                    <li>
+                        <a href="#">2019-110</a>
+                        <span>2019-04-20</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pageBox">
+                <a href="javascript:;" class="homepage">首页</a>
+                <a href="javascript:;" class="homepage-img">
+                    <img src="images/homepage.png" alt="home">
+                </a>
+                <a href="javascript:;" class="hover">1</a>
+                <a href="javascript:;" target="_self">2</a>
+                <a href="javascript:;" target="_self">3</a>
+                <a href="javascript:;" target="_self">4</a>
+                <a href="javascript:;" target="_self">5</a>
+                <a href="javascript:;" target="_self">6</a>
+                <a href="javascript:;" target="_self" class="lastpage-img">
+                    <img src="images/lastpage.png" alt="last">
+                </a>
+                <a href="javascript:;" target="_self" class="lastpage">尾页</a>
+                <span>共6页</span>
+            </div>
+        </div> 
+        <div class="right-containar"> <!-- 系统页面--官方下载 -->
+            <div class="xitong-title">
+                <p>官方下载</p>
+                <div class="xitong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="xitong.html" target="_self">系统</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">官方下载</a>
+                </div>
+            </div>
+            <div class="xlBox">
+                <ul>
+                    <li>
+                        <a href="#">中阿联合北斗测试评价结果</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2019-04-11</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B1I（3.0版）英文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2019-02-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B1I（3.0版）中文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2019-02-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗卫星导航系统应用案例（2018年12月）</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗卫星导航系统发展报告（3.0版）英文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗卫星导航系统发展报告（3.0版）中文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗卫星导航系统公开服务性能规范（2.0版）英文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗卫星导航系统公开服务性能规范（2.0版）中文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B3I（1.0版）英文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-02-09</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B3I（1.0版）中文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2018-02-09</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B2a（1.0版）英文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2017-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B2a（1.0版）中文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2017-12-27</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗系统空间信号接口控制文件B1C（1.0版）英文版</a>
+                        <a href="#" class="xzicon"></a>
+                        <span>2017-12-27</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pageBox">
+                <a href="javascript:;" class="homepage">首页</a>
+                <a href="javascript:;" class="homepage-img">
+                    <img src="images/homepage.png" alt="home">
+                </a>
+                <a href="javascript:;" class="hover">1</a>
+                <a href="javascript:;" target="_self">2</a>
+                <a href="javascript:;" target="_self" class="lastpage-img">
+                    <img src="images/lastpage.png" alt="last">
+                </a>
+                <a href="javascript:;" target="_self" class="lastpage">尾页</a>
+                <span>共2页</span>
+            </div>
+        </div> 
+        <div class="right-containar"> <!-- 系统页面--增强系统 -->
+            <div class="xitong-title">
+                <p>增强系统</p>
+                <div class="xitong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="xitong.html" target="_self">系统</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">增强系统</a>
+                </div>
+            </div>
+            <div class="xtBox">
+                <div class="desc">北斗系统增强系统</div>
+                <div class="xtBox-con">
+                    <p>北斗系统增强系统包括地基增强系统与星基增强系统。</p> 
+                    <p>北斗地基增强系统是北斗卫星导航系统的重要组成部分，按照“统一规划、统一标准、共建共享”的原则，整合国内地基增强资源，建立以北斗为主、兼容其他卫星导航系统的高精度卫星导航服务体系。利用北斗/GNSS高精度接收机，通过地面基准站网，利用卫星、移动通信、数字广播等播发手段，在服务区域内提供1-2米、分米级和厘米级实时高精度导航定位服务。系统建设分两个阶段实施，一期为2014年到2016年底，主要完成框架网基准站、区域加强密度网基准站、国家数据综合处理系统，以及国土资源、交通运输、中科院、地震、气象、测绘地理信息等6个行业数据处理中心等建设任务，建成基本系统，在全国范围提供基本服务；二期为2017年至2018年底，主要完成区域加强密度网基准站补充建设，进一步提升系统服务性能和运行连续性、稳定性、可靠性，具备全面服务能力。</p>  
+                    <p>北斗星基增强系统北斗卫星导航系统的重要组成部分，通过地球静止轨道卫星搭载卫星导航增强信号转发器，可以向用户播发星历误差、卫星钟差、电离层延迟等多种修正信息，实现对于原有卫星导航系统定位精度的改进。按照国际民航标准，开展北斗星基增强系统设计、试验与建设。目前，已完成系统实施方案论证，固化了系统在下一代双频多星座（DFMC）SBAS标准中的技术状态，进一步巩固了BDSBAS作为星基增强服务供应商的地位。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 系统页面--发射列表 -->
+            <div class="xitong-title">
+                <p>发射列表</p>
+                <div class="xitong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="xitong.html" target="_self">系统</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">发射列表</a>
+                </div>
+            </div>
+            <div class="fsBox">
+                <div class="desc">发射列表</div>
+                <div class="fsBox-img">
+                   <img src="images/fsimg.jpg" alt="" />  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div class="bottomBox">
+            <div class="youqingBox">
+                <div class="youqinglink">
+                    <p>友情链接</p>
+                    <ul class="youqingUl">
+                        <li><a href="#">中国载人航天工程网</a></li>
+                        <li><a href="#">中国航天科技集团有限公司</a></li>
+                        <li><a href="#">中国航天科工集团有限公司</a></li>
+                        <li><a href="#">中国科学院</a></li>
+                        <li><a href="#">中国电子科技集团公司</a></li>
+                        <li><a href="#">中国兵器工业集团公司</a></li>
+                        <li><a href="#">中国空间技术研究院</a></li>
+                        <li><a href="#">中国运载火箭技术研究院</a></li>
+                        <li><a href="#">中国卫星导航系统管理办公室测试评估研究中心</a></li>
+                        <li><a href="#">中国卫星导航学术年会</a></li>
+                        <li><a href="#">中国卫星导航定位协会</a></li>
+                    </ul>
+                </div>
+                <div class="erweima">
+                    <img src="images/erweima.jpg" alt="" />
+                    <p>北斗系统官方微信</p>
+                </div>
+            </div>
+            <div class="jieshaoBox">
+                <img src="images/banquan.png" alt="" />
+                <div class="jieshaoBox-con">
+                    <ul class="jieshaoUl">
+                        <li><a href="#">邮件服务 </a></li>
+                        <span>|</span>
+                        <li><a href="#">联系我们</a></li>
+                        <span>|</span>
+                        <li><a href="#">网站地图</a></li>
+                    </ul>
+                    <div class="banquan">
+                        <span>北斗卫星导航系统网站 版权所有</span>
+                        <span>中国卫星导航系统管理办公室主办</span>
+                        <span>京ICP备05022684号-2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/xitong.js" async defer></script>
+</body>
+
+</html>

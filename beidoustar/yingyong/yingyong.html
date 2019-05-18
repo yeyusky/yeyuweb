@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>应用页面</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/yingyong.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="top">
+        <div class="top-con">
+            <p>2018年11月23日 星期五</p>
+            <div class="top-left"></div>
+            <div class="top-right">
+                <a href="#">中文</a>
+                <div class="top-fg">|</div>
+                <a href="#">English</a>
+            </div>
+            <div class="weather" id="weabox">
+                <div id="box">
+                    <ul class="wea-demo1" id="demo1">
+                        <a href="javascript:;" title="点击查看北京天气情况"
+                            style="font-size: 14px; color: rgb(140, 181, 227);text-decoration: none;">
+                            <strong>今天：</strong>北京 小雨 <span style="color:#f00">9℃</span>～<span
+                                style="color:#4899be">3℃</span>南风
+                            <strong>明天：</strong>北京 多云 <span style="color:#f00">17℃</span>～<span
+                                style="color:#4899be">8℃</span>西北风 1级
+                            <strong>后天：</strong>北京 多云 <span style="color:#f00">18℃</span>～<span
+                                style="color:#4899be">5℃</span>西南风 2级
+                        </a>
+                    </ul>
+                    <ul class="wea-demo2" id="demo2"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <img src="images/logo.png" alt="北斗卫星导航" />
+        <div class="containar">
+            <div class="search-con">
+                <div class="select">全部</div>
+                <form class="search">
+                    <div class="search-icon"></div>
+                    <input class="search-in" type="text" value="搜索您需要的内容..." />
+                    <button class="btn1">搜索</button>
+                </form>
+            </div>
+            <a href="../login.html" target="_blank" class="btn2">邮箱登录</a>
+        </div>
+    </div>
+    <div id="nav">
+        <ul>
+            <li>
+                <a href="../index.html" target="_self">首页</a>
+                <i></i>
+                <div class="navdropdown" style="display: none; opacity: 0;">
+                </div>
+            </li>
+            <li>
+                <a href="../yaowen/yaowen.html" target="_self">要闻</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">新闻中心</a>
+                    <a href="#">官方公告</a>
+                    <a href="#">行业动态</a>
+                    <a href="#">国际动态</a>
+                    <a href="#">新闻专题</a>
+                </div>
+            </li>
+            <li>
+                <a href="../xitong/xitong.html" target="_self">系统</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">系统介绍</a>
+                    <a href="#">星历星座</a>
+                    <a href="#">监测评估</a>
+                    <a href="#">官方下载</a>
+                    <a href="#">增强系统</a>
+                    <a href="#">发射列表</a>
+                </div>
+            </li>
+            <li>
+                <a href="../chuantong/chuantong.html" target="_self">传统</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">北斗标识</a>
+                    <a href="#">北斗精神</a>
+                </div>
+            </li>
+            <li>
+                <a href="../yingyong/yingyong.html" target="_self">应用</a>
+                <i class="barrow"></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">基础产品</a>
+                    <a href="#">交通</a>
+                    <a href="#">农业</a>
+                    <a href="#">林业</a>
+                    <a href="#">渔业</a>
+                    <a href="#">公安</a>
+                    <a href="#">防灾减灾</a>
+                    <a href="#">特殊关爱</a>
+                    <a href="#">大众应用</a>
+                    <a href="#">电力</a>
+                    <a href="#">金融</a>
+                    <a href="#">产业</a>
+                </div>
+            </li>
+            <li>
+                <a href="../zhuanti/zhuanti.html" target="_self">专题</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">官方活动</a>
+                    <a href="#">北斗标准</a>
+                    <a href="#">政策法规</a>
+                    <a href="#">国际合作</a>
+                    <a href="#">知识产权</a>
+                    <a href="#">导航年会</a>
+                    <a href="#">新闻发布会</a>
+                </div>
+            </li>
+            <li>
+                <a href="../ziyuan/ziyuan.html" target="_self">资源</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">科普园地</a>
+                    <a href="#">北斗图片</a>
+                    <a href="#">北斗视频</a>
+                </div>
+            </li>
+            <li>
+                <a href="../help/help.html" target="_self">帮助</a>
+                <i></i>
+                <div class="navdropdown" style="display: none;">
+                    <a href="#">常见问题</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">友情链接</a>
+                    <a href="#">ICD咨询邮箱</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="left-navbar">
+            <p>应用</p>
+            <ul id="navbarUl">
+                <a href="jccp.html" target="_self">基础产品</a>
+                <li class="navbaracT"><a href="#">交通</a></li>
+                <li><a href="#">农业</a></li>
+                <li><a href="#">林业</a></li>
+                <li><a href="#">渔业</a></li>
+                <li><a href="#">公安</a></li>
+                <li><a href="#">防灾减灾</a></li>
+                <li><a href="#">特殊关爱</a></li>
+                <li><a href="#">大众应用</a></li>
+                <li><a href="#">电力</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">产业</a></li>
+            </ul>
+        </div>
+        <div class="right-containar  yyactive"> <!-- 应用页面--交通 -->
+            <div class="yingyong-title">
+                <p>交通</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">交通</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">交通</div>
+                <div class="yyBox-con">  
+                    <p>交通运输是国民经济、社会发展和人民生活的命脉，北斗卫星导航系统是助力实现交通运输信息化和现代化的重要手段，对建立畅通、高效、安全、绿色的现代交通运输体系具有十分重要的意义。</p> 
+                    <p>主要包括陆地应用，如车辆自主导航、车辆跟踪监控、车辆智能信息系统、车联网应用、铁路运营监控等；航海应用，如远洋运输、内河航运、船舶停泊与入坞等；航空应用，如航路导航、机场场面监控、精密进近等。随着交通的发展，高精度应用需求加速释放。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--农业 -->
+            <div class="yingyong-title">
+                <p>农业</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">农业</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">农业</div>
+                <div class="yyBox-con">  
+                    <p>中国是农业大国，北斗卫星导航技术结合遥感、地理信息等技术，使得传统农业向智慧农业农业加快发展，显著降低了生产成本，提升了劳动生产率，提高了劳动收益。</p> 
+                    <p>主要包括农田信息采集、土壤养分及分布调查、农作物施肥、农作物病虫害防治、特种作物种植区监控、以及农业机械无人驾驶、农田起垄播种、无人机植保等应用，其中农业机械无人驾驶、农田起垄播种、无人机植保等应用对高精度北斗服务需求强烈。 </p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--林业 -->
+            <div class="yingyong-title">
+                <p>林业</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">林业</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">林业</div>
+                <div class="yyBox-con">  
+                    <p>林业是北斗系统应用较早的行业之一。林业管理部门利用北斗应用进行林业资源清查、林地管理与巡查等，大大降低了管理成本，提升了工作效率。</p> 
+                    <p>主要包括林区面积测算、木材量估算、巡林员巡林、森林防火、测定地区界线等应用。其中巡林员巡林、森林防火等使用了北斗特有的短报文功能。</p> 
+                    <p>特别是在国家森林资源普查中，北斗卫星导航技术结合遥感等技术，发挥了重要作用。而随着中国林区实行集体林权改革，北斗系统也在勘界确权上得到广泛应用。</p> 
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--渔业 -->
+            <div class="yingyong-title">
+                <p>渔业</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">渔业</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">渔业</div>
+                <div class="yyBox-con">  
+                    <p>渔业是北斗短报文特色服务普及较早应用广泛的行业。我国是渔业大国，海洋渔业水域面积300多万平方公里，从事海洋渔业的渔船与渔民众多。</p> 
+                    <p>主要包括渔船出海导航、渔政监管、渔船出入港管理、海洋灾害预警、渔民短报文通信等等应用。特别是在没有移动通信信号的海域，使用北斗系统短报文功能，渔民能够通过北斗终端向家人报平安，有力保障了渔民生命安全、国家海洋经济安全、海洋资源保护和海上主权维护。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--公安 -->
+            <div class="yingyong-title">
+                <p>公安</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">公安</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">公安</div>
+                <div class="yyBox-con">  
+                    <p>反恐、维稳、警卫、安保等大量公安业务，具有高度敏感性和保密性要求，推广应用北斗系统势在必行。基于北斗的公安信息化系统，实现了警力资源动态调度、一体化指挥，提高了响应速度与执行效率。</p> 
+                    <p>主要包括公安车辆指挥调度、民警现场执法、应急事件信息传输、公安授时服务等应用。其中，应急事件信息传输使用了北斗特有的短报文功能。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--防灾减灾 -->
+            <div class="yingyong-title">
+                <p>防灾减灾</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">防灾减灾</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">防灾减灾</div>
+                <div class="yyBox-con">  
+                    <p>防灾减灾领域，是北斗应用较为突出的行业应用之一。通过北斗系统的短报文与位置报告功能，实现灾害预警速报、救灾指挥调度、快速应急通信等，可极大提高灾害应急救援反应速度和决策能力。</p> 
+                    <p>主要包括灾情上报、灾害预警、救灾指挥、灾情通信、楼宇桥梁水库等监测等应用。其中，救灾指挥、灾情通信使用了北斗特有的短报文功能，楼宇桥梁水库等应用利用了高精度北斗服务。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--特殊关爱 -->
+            <div class="yingyong-title">
+                <p>特殊关爱</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">特殊关爱</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">特殊关爱</div>
+                <div class="yyBox-con">  
+                    <p>近年来，北斗特殊人群关爱应用逐步兴起。通过北斗系统导航、定位、短报文等功能，为老人、儿童、残疾人等特殊人群提供相关服务，保障安全。</p> 
+                    <p>主要包括电子围栏、紧急呼救等应用，其中电子围栏，实现了相关人群走出设定的电子围栏范围，设置人手机就能收到及时提醒。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--大众应用 -->
+            <div class="yingyong-title">
+                <p>大众应用</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">大众应用</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">大众应用</div>
+                <div class="yyBox-con">  
+                    <p>手机、可穿戴设备等北斗大众应用，逐步成为近年来北斗应用的新亮点。利用北斗定位功能，实现手机导航、路线规划等一系列位置服务功能，使人民生活更加便捷。</p> 
+                    <p>主要包括手机应用、车载导航设备、可穿戴设备等应用，通过与信息通信、物联网、云计算等技术深度融合，实现了众多的位置服务功能。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--电力 -->
+            <div class="yingyong-title">
+                <p>电力</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">电力</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">电力</div>
+                <div class="yyBox-con">  
+                    <p>电力传输时间同步涉及国家经济民生安全，北斗应用势在必行。电力管理部门通过使用北斗系统的授时功能，实现电力全网时间基准统一，保障电网安全稳定运行。</p> 
+                    <p>主要包括电网时间基准统一、电站环境监测、电力车辆监控等应用，其中电网时间基准统一等迫切需要高精度北斗服务。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--金融 -->
+            <div class="yingyong-title">
+                <p>金融</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">金融</a>
+                </div>
+            </div>
+            <div class="yyBox">
+                <div class="desc">金融</div>
+                <div class="yyBox-con">  
+                    <p>金融行业计算机网络时间同步，涉及国家政治经济民生安全，自主北斗应用势在必行。金融管理部门通过使用北斗授时功能，实现金融计算机网络时间基准统一，保障金融系统安全稳定运行。</p> 
+                    <p>主要包括金融计算机网络时间基准统一、金融车辆监管等应用。</p>  
+                </div>
+            </div>
+        </div>
+        <div class="right-containar"> <!-- 应用页面--产业 -->
+            <div class="yingyong-title">
+                <p>产业</p>
+                <div class="yingyong-link">
+                    <i></i>
+                    <a href="../index.html" target="_blank">首页</a>
+                    &nbsp;>&nbsp;
+                    <a href="yingyong.html" target="_self">应用</a>
+                    &nbsp;>&nbsp;
+                    <a href="javascript:;" target="_self">产业</a>
+                </div>
+            </div>
+            <div class="cyBox">
+                <ul>
+                    <li>
+                        <a href="#">万亿车联网“蓝海”中 北斗“芯”该怎么“玩”？</a>
+                        <span>2018-07-19</span>
+                    </li>
+                    <li>
+                        <a href="#">“伪北斗”层出不穷，花样套路多</a>
+                        <span>2018-06-11</span>
+                    </li>
+                    <li>
+                        <a href="#">合众思壮与中国民航二所签订合作协议，共推北斗民航应用</a>
+                        <span>2019-04-12</span>
+                    </li>
+                    <li>
+                        <a href="#">济南：发布地理信息产业规划，打造北斗产业集群</a>
+                        <span>2019-03-18</span>
+                    </li>
+                    <li>
+                        <a href="#">公交车还能和红绿灯“聊天”？北斗高精度让梦想照进现实</a>
+                        <span>2019-03-13</span>
+                    </li>
+                    <li>
+                        <a href="#">成立创新中心，推动北斗系统深化应用</a>
+                        <span>2019-03-06</span>
+                    </li>
+                    <li>
+                        <a href="#">刘经南院士：紧抓机遇，实现北斗产业爆发式增长</a>
+                        <span>2019-02-18</span>
+                    </li>
+                    <li>
+                        <a href="#">凝聚中国航天智慧，北斗拉动经济发展</a>
+                        <span>2018-12-18</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗跨界融合，体验精准时空信息</a>
+                        <span>2018-12-18</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗导航走向全球 自动驾驶定位精度提升可期</a>
+                        <span>2018-12-06</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗为车联网产业实现跨越式发展提供有力保障</a>
+                        <span>2018-09-04</span>
+                    </li>
+                    <li>
+                        <a href="#">北斗产业驶入快车道 市场应用迎来爆发期</a>
+                        <span>2018-09-03</span>
+                    </li>
+                    <li>
+                        <a href="#">新疆布局北斗等卫星应用产业助推经济发展</a>
+                        <span>2018-07-24</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pageBox">
+                <a href="javascript:;" class="homepage">首页</a>
+                <a href="javascript:;" class="homepage-img">
+                    <img src="images/homepage.png" alt="home">
+                </a>
+                <a href="javascript:;" class="hover">1</a>
+                <a href="javascript:;" target="_self">2</a>
+                <a href="javascript:;" target="_self">3</a>
+                <a href="javascript:;" target="_self">4</a>
+                <a href="javascript:;" target="_self">5</a>
+                <a href="javascript:;" target="_self">6</a>
+                <a href="javascript:;" target="_self" class="lastpage-img">
+                    <img src="images/lastpage.png" alt="last">
+                </a>
+                <a href="javascript:;" target="_self" class="lastpage">尾页</a>
+                <span>共6页</span>
+            </div>
+        </div> 
+    </div>
+    <div id="bottom">
+        <div class="bottomBox">
+            <div class="youqingBox">
+                <div class="youqinglink">
+                    <p>友情链接</p>
+                    <ul class="youqingUl">
+                        <li><a href="#">中国载人航天工程网</a></li>
+                        <li><a href="#">中国航天科技集团有限公司</a></li>
+                        <li><a href="#">中国航天科工集团有限公司</a></li>
+                        <li><a href="#">中国科学院</a></li>
+                        <li><a href="#">中国电子科技集团公司</a></li>
+                        <li><a href="#">中国兵器工业集团公司</a></li>
+                        <li><a href="#">中国空间技术研究院</a></li>
+                        <li><a href="#">中国运载火箭技术研究院</a></li>
+                        <li><a href="#">中国卫星导航系统管理办公室测试评估研究中心</a></li>
+                        <li><a href="#">中国卫星导航学术年会</a></li>
+                        <li><a href="#">中国卫星导航定位协会</a></li>
+                    </ul>
+                </div>
+                <div class="erweima">
+                    <img src="images/erweima.jpg" alt="" />
+                    <p>北斗系统官方微信</p>
+                </div>
+            </div>
+            <div class="jieshaoBox">
+                <img src="images/banquan.png" alt="" />
+                <div class="jieshaoBox-con">
+                    <ul class="jieshaoUl">
+                        <li><a href="#">邮件服务 </a></li>
+                        <span>|</span>
+                        <li><a href="#">联系我们</a></li>
+                        <span>|</span>
+                        <li><a href="#">网站地图</a></li>
+                    </ul>
+                    <div class="banquan">
+                        <span>北斗卫星导航系统网站 版权所有</span>
+                        <span>中国卫星导航系统管理办公室主办</span>
+                        <span>京ICP备05022684号-2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/yingyong.js" async defer></script>
+</body>
+
+</html>

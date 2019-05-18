@@ -4,86 +4,664 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-  <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>北斗官网首页</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <!--[if lt IE 7]>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>北斗官网首页</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <div id="top">
-      <div class="top-con">
-        <p>2018年11月23日 星期五</p>
-        <div class="top-left"></div>
-        <div class="top-right">
-          <a href="#">中文</a>
-          <div class="top-fg">|</div>
-          <a href="#">English</a>
+  <div id="top">
+    <div class="top-con">
+      <p>2018年11月23日 星期五</p>
+      <div class="top-left"></div>
+      <div class="top-right">
+        <a href="#">中文</a>
+        <div class="top-fg">|</div>
+        <a href="#">English</a>
+      </div>
+      <div class="weather" id="weabox">
+        <div id="box">
+          <ul class="wea-demo1" id="demo1">
+            <a href="javascript:;" title="点击查看北京天气情况"
+              style="font-size: 14px; color: rgb(140, 181, 227);text-decoration: none;">
+              <strong>今天：</strong>北京 小雨 <span style="color:#f00">9℃</span>～<span style="color:#4899be">3℃</span>南风
+              <strong>明天：</strong>北京 多云 <span style="color:#f00">17℃</span>～<span style="color:#4899be">8℃</span>西北风 1级
+              <strong>后天：</strong>北京 多云 <span style="color:#f00">18℃</span>～<span style="color:#4899be">5℃</span>西南风 2级
+            </a>
+          </ul>
+          <ul class="wea-demo2" id="demo2"></ul>
         </div>
-        <marquee behavior="scroll" direction="left" class="roll"
-          >今天：北京 晴</marquee
-        >
       </div>
     </div>
-    <div id="header">
-      <img src="images/logo.png" alt="北斗卫星导航" />
-      <div class="containar">
-        <div class="search-con">
-          <div class="select">全部</div>
-          <form class="search">
-            <div class="search-icon"></div>
-            <input class="search-in" type="text" value="搜索您需要的内容..." />
-            <button class="btn1">搜索</button>
-          </form>
-        </div>
-        <button class="btn2">邮箱登录</button>
+  </div>
+  <div id="header">
+    <img src="images/logo.png" alt="北斗卫星导航" />
+    <div class="containar">
+      <div class="search-con">
+        <div class="select">全部</div>
+        <form class="search">
+          <div class="search-icon"></div>
+          <input class="search-in" type="text" value="搜索您需要的内容..." />
+          <button class="btn1">搜索</button>
+        </form>
       </div>
+      <a href="login.html" target="_blank" class="btn2">邮箱登录</a>
     </div>
-    <div id="main">
-      <div class="nav">
-        <ul>
-          <li><a href="#">首页</a><i></i></li>
-          <li><a href="#">要闻</a></li>
-          <li><a href="#">系统</a></li>
-          <li><a href="#">传统</a></li>
-          <li><a href="#">应用</a></li>
-          <li><a href="#">专题</a></li>
-          <li><a href="#">资源</a></li>
-          <li><a href="#">帮助</a></li>
+  </div>
+  <div id="nav">
+    <ul>
+      <li>
+        <a href="index.html">首页</a>
+        <i class="barrow"></i>
+        <div class="navdropdown" style="display: none; opacity: 0;">
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/yaowen/yaowen.html" target="_self">要闻</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">新闻中心</a>
+          <a href="#">官方公告</a>
+          <a href="#">行业动态</a>
+          <a href="#">国际动态</a>
+          <a href="#">新闻专题</a>
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/xitong/xitong.html" target="_self">系统</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">系统介绍</a>
+          <a href="#">星历星座</a>
+          <a href="#">监测评估</a>
+          <a href="#">官方下载</a>
+          <a href="#">增强系统</a>
+          <a href="#">发射列表</a>
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/chuantong/chuantong.html" target="_self">传统</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">北斗标识</a>
+          <a href="#">北斗精神</a>
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/yingyong/yingyong.html" target="_self">应用</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">基础产品</a>
+          <a href="#">交通</a>
+          <a href="#">农业</a>
+          <a href="#">林业</a>
+          <a href="#">渔业</a>
+          <a href="#">公安</a>
+          <a href="#">防灾减灾</a>
+          <a href="#">特殊关爱</a>
+          <a href="#">大众应用</a>
+          <a href="#">电力</a>
+          <a href="#">金融</a>
+          <a href="#">产业</a>
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/zhuanti/zhuanti.html" target="_self">专题</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">官方活动</a>
+          <a href="#">北斗标准</a>
+          <a href="#">政策法规</a>
+          <a href="#">国际合作</a>
+          <a href="#">知识产权</a>
+          <a href="#">导航年会</a>
+          <a href="#">新闻发布会</a>
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/ziyuan/ziyuan.html" target="_self">资源</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">科普园地</a>
+          <a href="#">北斗图片</a>
+          <a href="#">北斗视频</a>
+        </div>
+      </li>
+      <li>
+        <a href="../beidoustar/help/help.html" target="_self">帮助</a>
+        <i></i>
+        <div class="navdropdown" style="display: none;">
+          <a href="#">常见问题</a>
+          <a href="#">联系我们</a>
+          <a href="#">友情链接</a>
+          <a href="#">ICD咨询邮箱</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="main">
+    <div class="main-con" id="main-con">
+      <div class="main-con-left">
+        <ul id="left-con">
+          <li class="on" style="opacity:1;"><a><img src="images/s1.jpg" alt="1"></a>
+            <p>北斗卫星导航系统介绍</p>
+          </li>
+          <li style="opacity:0;"><a><img src="images/s2.png" alt="2"></a>
+            <p>星历星座</p>
+          </li>
+          <li style="opacity:0;"><a><img src="images/s3.png" alt="3"></a>
+            <p>监测评估</p>
+          </li>
+          <li style="opacity:0;"><a><img src="images/s4.jpg" alt="4"></a>
+            <p>北斗三号基本系统建成及提供全球服务情况发布会召开</p>
+          </li>
+          <li style="opacity:0;"><a><img src="images/s5.jpg" alt="5"></a>
+            <p>我国成功发射第四十二、四十三颗北斗导航卫星</p>
+          </li>
+        </ul>
+        <div id="left-btn">
+          <span class="btn"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="main-con-right">
+        <ul id="right-con">
+          <li><i class="i"></i><span class="s"></span><img src="images/s1.jpg" alt="1">
+            <p>北斗卫星导航系统介绍</p>
+          </li>
+          <li><i></i><span></span><img src="images/s2.png" alt="2">
+            <p>星历星座</p>
+          </li>
+          <li><i></i><span></span><img src="images/s3.png" alt="3">
+            <p>监测评估</p>
+          </li>
+          <li><i></i><span></span><img src="images/s4.jpg" alt="4">
+            <p>北斗三号基本系统建成及提供全球服务情况发布会召开</p>
+          </li>
+          <li><i></i><span></span><img src="images/s5.jpg" alt="5">
+            <p>我国成功发射第四十二、四十三颗北斗导航卫星</p>
+          </li>
         </ul>
       </div>
-      <div class="main-con">
-        <div class="main-con-left">
-          <div class="left-bot">
-            <p>我国成功发射第四十二、四十三颗北斗导航卫星</p>
-            <div class="left-btn">
-              <div class="sbtn1"></div>
-              <div class="sbtn2"></div>
-              <div class="sbtn3"></div>
-              <div class="sbtn4"></div>
-              <div class="sbtn5"></div>
+    </div>
+    <div class="news">
+      <div class="new-title">
+        <i class="icon1"></i><span>最新新闻</span><i class="icon2"></i>
+      </div>
+      <div class="news-roll" id="news-roll">
+        <div id="box">
+          <ul class="wea-demo1" id="demo3" style="float: left;height: 30px;line-height: 30px;">
+            <a href="javascript:;"
+              style="line-height: 30px;color: #235491;font-size: 14px;display: block;height: 30px;margin-right: 10px;float: left;cursor: pointer;text-decoration: none;">联合国全球卫星导航系统国际委员会第十三届大会在西安召开</a><a
+              href="javascript:;"
+              style="line-height: 30px;color: #235491;font-size: 14px;display: block;height: 30px;margin-right: 10px;float: left;cursor: pointer;text-decoration: none;">联合国全球卫星导航系统国际委员会第十三届大会在西安召开</a><a
+              href="javascript:;"
+              style="line-height: 30px;color: #235491;font-size: 14px;display: block;height: 30px;margin-right: 10px;float: left;cursor: pointer;text-decoration: none;">联合国全球卫星导航系统国际委员会第十三届大会在西安召开</a>
+          </ul>
+          <ul class="wea-demo2" id="demo4" style="float: left;height: 30px;line-height: 30px;"></ul>
+        </div>
+      </div>
+      <!-- <marquee behavior="scroll" direction="left" class="new-roll"><span>联合国全球卫星导航系统国际委员会第十三届大会在西安召开</span><span>联合国全球卫星导航系统国际委员会第十三届大会在西安召开</span><span>联合国全球卫星导航系统国际委员会第十三届大会在西安召开</span></marquee> -->
+    </div>
+    <div class="news-imp">
+      <div class="impnew">
+        <div class="impnew-con">
+          <div class="com-title">
+            <i></i>
+            <span>要闻</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <div class="impnew-item">
+            <ul class="impnew-itemul">
+              <li class="lis">新闻中心<i class="lis-icon"></i></li>
+              <li>行业动态<i></i></li>
+              <li>国际动态<i></i></li>
+            </ul>
+            <div class="yaowenBox acT">
+              <div class="yaowenTop">
+                <img src="images/s5.jpg" alt="发射">
+                <div class="yaowenCon">
+                  <p><a href="javascript:;" target="">我国成功发射第四十二、四十三颗北斗导航卫星</a></p>
+                  <span>2018年11月19日2时7分，我国在西昌卫星发射中心用长征三号乙运载火箭（及远征一号上面级)...<a href="javascript:;"
+                      target="">[详情]</a></span>
+                  <div class="yanwenitem1">11-9</div>
+                </div>
+              </div>
+              <ul class="yaowenUl">
+                <li><a href="#">我国代表赴美参加2019年美国导航学会环太平洋PNT会议</a><span>04-13</span></li>
+                <li><a href="#">关于开展2019年度北斗卫星导航领域国家标准申报工作的通知</a><span>04-10</span></li>
+                <li><a href="#">孙家栋：书写北斗传奇</a><span>04-09</span></li>
+                <li><a href="#">人民日报海外版：北斗卫星闪耀一带一路</a><span>04-08</span></li>
+                <li><a href="#">中阿北斗合作掀起2019年首个北斗系统关注热潮</a><span>04-08</span></li>
+                <li><a href="#">阿盟国家信息通信技术部部长一行参观中阿北斗中心</a><span>04-04</span></li>
+              </ul>
+            </div>
+            <div class="yaowenBox">
+              <div class="yaowenTop">
+                <img src="images/s6.png" alt="发射">
+                <div class="yaowenCon">
+                  <p><a href="javascript:;" target="">长沙：打造“北斗+”产业高地</a></p>
+                  <span>日前，“2018年长沙市北斗产业年会暨长沙市北斗导航产业技术创新战略联盟年终总结...<a href="javascript:;" target="">[详情]</a></span>
+                  <div class="yanwenitem1">01-31</div>
+                </div>
+              </div>
+              <ul class="yaowenUl">
+                <li><a href="#">北斗/GNSS监测系统提前两天预警甘肃黄土滑坡，无人伤亡</a><span>03-29</span></li>
+                <li><a href="#">广西北海：北斗系统促进向海经济发展</a><span>03-29</span></li>
+                <li><a href="#">山东青岛：北斗导航无人驾驶助力蔬菜机械化生产</a><span>03-29</span></li>
+                <li><a href="#">北斗高精度赋能“机器人”，服务立体化智能农业</a><span>03-28</span></li>
+                <li><a href="#">成都：北斗为智能农机装上信息化大脑</a><span>03-22</span></li>
+                <li><a href="#">北斗助春耕 种田更轻松</a><span>03-21</span></li>
+              </ul>
+            </div>
+            <div class="yaowenBox">
+              <div class="yaowenTop">
+                <img src="images/s7.png" alt="发射">
+                <div class="yaowenCon">
+                  <p><a href="javascript:;" target="">欧洲：伽利略4颗卫星成功发射</a></p>
+                  <span>近日，欧洲成功地发射了4颗伽利略系统全运行能力卫星，卫星进入轨道后将使伽利略空...<a href="javascript:;" target="">[详情]</a></span>
+                  <div class="yanwenitem1">08-02</div>
+                </div>
+              </div>
+              <ul class="yaowenUl">
+                <li><a href="#">欧洲：伽利略系统参考中心启用</a><span>05-18</span></li>
+                <li><a href="#">印度成功发射导航卫星IRNSS-1I</a><span>04-13</span></li>
+                <li><a href="#">外媒：中美卫星导航合作，为用户提供更好服务</a><span>12-15</span></li>
+                <li><a href="#">欧洲：伽利略系统4颗新卫星升空</a><span>12-23</span></li>
+                <li><a href="#">下一批GPS卫星被命名为GPS-IIIF</a><span>11-29</span></li>
+                <li><a href="#">日本：发射第四颗准天顶卫星</a><span>10-13</span></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="main-con-right">
-          <div class="right-pic1"><img src="images/s1.jpg" alt="" /></div>
-          <div class="right-pic2"><img src="images/s1.jpg" alt="" /></div>
-          <div class="right-pic3"><img src="images/s2.png" alt="" /></div>
-          <div class="right-pic4"><img src="images/s3.png" alt="" /></div>
-          <div class="right-pic5"><img src="images/s4.jpg" alt="" /></div>
+        <div class="xingzuoBox">
+          <div class="xingzuoBox-title">
+            <i></i><a href="#">星历星座</a>
+          </div>
+          <div class="xingzuoBox-img">
+            <a href="#"><img src="images/s3.png" alt="星座"></a>
+          </div>
+        </div>
+      </div>
+      <div class="xitongBox">
+        <div class="xitongBox-con">
+          <div class="com-title">
+            <i></i>
+            <span>系统</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <a href="javascript:;" class="xitongBox-con-desc">
+            北斗卫星导航系统（以下简称北斗系统）是中国着眼于国家安全和经济社会发展需要，自主建设、独立运行的卫星导航系统，是为全球用户提供全天候、全天时、高精度的定位、导航和授时服务的国家重要空间基础设施。[详细]
+          </a>
+        </div>
+        <div class="gonggaoBox-con">
+          <div class="com-title">
+            <i></i>
+            <span>官方公告</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <ul class="gonggaoUl">
+            <li><a href="#">关于开展2019年度北斗卫星导航领域国家标准申报工作的通知</a><span>04-10</span></li>
+            <li><a href="#">北斗重大专项民用高精度基础产品（全球信号）测试单位招标结果公告</a><span>03-17</span></li>
+          </ul>
+        </div>
+        <div class="xiazaiBox-con">
+          <div class="com-title">
+            <i></i>
+            <span>官方公告</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <ul class="xiazaiUl">
+            <li><a href="#">中阿联合北斗测试评价结果</a><a href="#" class="xiazaiA"></a><span>04-11</span></li>
+            <li><a href="#">北斗系统空间信号接口控制文件B1I（3.0版）英文版</a><a href="#" class="xiazaiA"></a><span>02-27</span></li>
+            <li><a href="#">北斗系统空间信号接口控制文件B1I（3.0版）中文版</a><a href="#" class="xiazaiA"></a><span>02-27</span></li>
+          </ul>
+        </div>
+        <div class="jianceBox">
+          <div class="jianceBox-title">
+            <i></i><a href="#">监测评估</a>
+          </div>
+          <div class="jianceBox-img">
+            <a href="#"><img src="images/s2.png" alt="星座"></a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="yingyongBox">
+      <div class="yingyongBox-con">
+        <div class="com-title">
+          <i></i>
+          <span>应用</span>
+        </div>
+        <a href="javascript:;" class="bigicon"></a>
+        <div class="yingyongcenter">
+          <div class="yingyongcenter-item" style="background-color:#b3e5fc">
+            <i class="yyicon1"></i>
+            <span class="topspan" style="color:#0288d1;">基础产品</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon1.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con con-active">
+            <p>
+              北斗卫星导航芯片、模块、天线、板卡等基础产品，是北斗系统应用的基础。通过卫星导航专项的集智攻关，我国实现了卫星导航基础产品的自主可控，形成了完整的产业链，逐步应用到国民经济和社会发展的各个领域。伴随着互联网、大数据、云计算、物联网等技术的发展，北斗基础产品的嵌入式、融合性应用逐步加强，产生了显著的融合效益。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg1.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#a1e1fe">
+            <i class="yyicon2"></i>
+            <span class="topspan" style="color:#0288d1;">交通</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon2.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con ">
+            <p>
+              交通运输是国民经济、社会发展和人民生活的命脉，北斗卫星导航系统是助力实现交通运输信息化和现代化的重要手段，对建立畅通、高效、安全、绿色的现代交通运输体系具有十分重要的意义。主要包括陆地应用、航海应用、航空应用。随着交通的发展，高精度应用需求加速释放。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg2.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#81d4fa">
+            <i class="yyicon3"></i>
+            <span class="topspan" style="color:#0288d1;">农业</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon3.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              北斗卫星导航技术结合遥感、地理信息等技术，使得传统农业向智慧农业农业加快发展，显著降低了生产成本，提升了劳动生产率，提高了劳动收益。主要包括农田信息采集、土壤养分及分布调查、农作物施肥、农作物病虫害防治、特种作物种植区监控、以及农业机械无人驾驶、农田起垄播种、无人机植保等应用，其中农业机械无人驾...<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg3.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#4fc3f7">
+            <i class="yyicon4"></i>
+            <span class="topspan" style="color:#0288d1;">林业</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon4.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              林业是北斗系统应用较早的行业之一。林业管理部门利用北斗应用进行林业资源清查、林地管理与巡查等，大大降低了管理成本，提升了工作效率。主要包括林区面积测算、木材量估算、巡林员巡林、森林防火、测定地区界线等应用。其中巡林员巡林、森林防火等使用了北斗特有的短报文功能。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg4.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#29b6f6">
+            <i class="yyicon5"></i>
+            <span class="topspan" style="color:#0288d1;">渔业</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon5.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              渔业是北斗短报文特色服务普及较早应用广泛的行业。主要包括渔船出海导航、渔政监管、渔船出入港管理、海洋灾害预警、渔民短报文通信等等应用。使用北斗系统短报文功能，渔民能够通过北斗终端向家人报平安，有力保障了渔民生命安全、国家海洋经济安全、海洋资源保护和海上主权维护。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg5.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#03a9f4">
+            <i class="yyicon6"></i>
+            <span class="topspan" style="color:#b3e5fc;">公安</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon6.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>反恐、维稳、警卫、安保等大量公安业务，具有高度敏感性和保密性要求，推广应用北斗系统势在必行。基于北斗的公安信息化系统，实现了警力资源动态调度、一体化指挥，提高了响应速度与执行效率
+              主要包括公安车辆指挥调度、民警现场执法、应急事件信息传输、公安授时服务等应用。其中，应急事件信息传输使用了北斗特有的短报文功能。<a href="#">[详情]</a></p>
+            <img src="images/conimg6.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#039be5">
+            <i class="yyicon7"></i>
+            <span class="topspan" style="color:#b3e5fc;">防灾减灾</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon7.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              防灾减灾领域，是北斗应用较为突出的行业应用之一。通过北斗系统的短报文与位置报告功能，实现灾害预警速报、救灾指挥调度、快速应急通信等，可极大提高灾害应急救援反应速度和决策能力。主要包括灾情上报、灾害预警、救灾指挥、灾情通信、楼宇桥梁水库等监测等应用。其中，救灾指挥、灾情通信使用了北斗特有的短报文功...<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg7.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#0288d1">
+            <i class="yyicon8"></i>
+            <span class="topspan" style="color:#b3e5fc;">特殊关爱</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon8.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              近年来，北斗特殊人群关爱应用逐步兴起。通过北斗系统导航、定位、短报文等功能，为老人、儿童、残疾人等特殊人群提供相关服务，保障安全。主要包括电子围栏、紧急呼救等应用，其中电子围栏，实现了相关人群走出设定的电子围栏范围，设置人手机就能收到及时提醒。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg8.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#0277bd">
+            <i class="yyicon9"></i>
+            <span class="topspan" style="color:#b3e5fc;">大众应用</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon9.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              手机、可穿戴设备等北斗大众应用，逐步成为近年来北斗应用的新亮点。利用北斗定位功能，实现手机导航、路线规划等一系列位置服务功能，使人民生活更加便捷。主要包括手机应用、车载导航设备、可穿戴设备等应用，通过与信息通信、物联网、云计算等技术深度融合，实现了众多的位置服务功能。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg9.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#01579b">
+            <i class="yyicon10"></i>
+            <span class="topspan" style="color:#b3e5fc;">电力</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon10.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              电力传输时间同步涉及国家经济民生安全，北斗应用势在必行。电力管理部门通过使用北斗系统的授时功能，实现电力全网时间基准统一，保障电网安全稳定运行。主要包括电网时间基准统一、电站环境监测、电力车辆监控等应用，其中电网时间基准统一等迫切需要高精度北斗服务。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg10.jpg" alt="" />
+          </div>
+          <div class="yingyongcenter-item" style="background-color:#02487f">
+            <i class="yyicon11"></i>
+            <span class="topspan" style="color:#b3e5fc;">金融</span>
+            <a href="#" class="bomicon">
+              <img src="images/bomicon11.png" alt="" />
+            </a>
+          </div>
+          <div class="yingyongcenter-con">
+            <p>
+              金融行业计算机网络时间同步，涉及国家政治经济民生安全，自主北斗应用势在必行。金融管理部门通过使用北斗授时功能，实现金融计算机网络时间基准统一，保障金融系统安全稳定运行。主要包括金融计算机网络时间基准统一、金融车辆监管等应用。<a
+                href="#">[详情]</a></p>
+            <img src="images/conimg11.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hezuoImg">
+      <a href="#">
+        <img src="images/hezuoimg.png" alt="">
+      </a>
+    </div>
+    <div class="mainBox">
+      <div class="hezuoBox-con">
+        <div class="gjhezuoBox">
+          <div class="com-title">
+            <i></i>
+            <span>国际合作</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <div class="gjhezuoBox-top">
+            <img src="images/gjhzimg.jpg" alt="发射">
+            <div class="gjhezuoCon">
+              <p><a href="javascript:;" target="">第二届中阿北斗合作论坛在突尼斯成功举办</a></p>
+              <span>第二届中阿北斗合作论坛于2019年4月1日在突尼斯共和国突尼斯市成功举办...<a href="javascript:;" target="">[详情]</a></span>
+              <div class="gjhezuoTime">11-09</div>
+            </div>
+          </div>
+          <ul class="gjhezuoUl">
+            <li><a href="#">我国代表团赴德国参加2019年慕尼黑卫星导航峰会</a><span>03-31</span></li>
+            <li><a href="#">关于邀请参加第二届中阿北斗合作论坛的通知</a><span>02-20</span></li>
+            <li><a href="#">中国代表团赴维也纳参加ICG-14大会第一次预备会及联合国和平...</a><span>02-21</span></li>
+            <li><a href="#">联合国全球卫星导航系统国际委员会第十三届大会圆满闭幕</a><span>11-09</span></li>
+            <li><a href="#">中俄卫星导航政府间合作协定在京签署</a><span>11-07</span></li>
+            <li><a href="#">联合国全球卫星导航系统国际委员会第十三届大会在西安召开</a><span>11-05</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="chanyeBox-con">
+        <div class="chanyeBox">
+          <div class="com-title">
+            <i></i>
+            <span>产业</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <div class="chanyeBox-top">
+            <img src="images/chanyeimg1.jpg" alt="发射">
+            <div class="chanyeCon">
+              <p><a href="javascript:;" target="">万亿车联网“蓝海”中 北斗“芯”该怎么“玩”？</a></p>
+              <span>据《2018中国卫星导航与位置服务产业发展白皮书》显示2017...<a href="javascript:;" target="">[详情]</a></span>
+              <div class="chanyeTime">07-19</div>
+            </div>
+          </div>
+          <div class="chanyeBox-bom">
+            <img src="images/chanyeimg2.jpg" alt="发射">
+            <div class="chanyebomCon">
+              <p><a href="javascript:;" target="">“伪北斗”层出不穷，花样套路多</a></p>
+              <span>作为国之重器，我国北斗卫星导航系统人尽皆知，而在北斗应...<a href="javascript:;" target="">[详情]</a></span>
+              <div class="chanyebomTime">06-11</div>
+            </div>
+          </div>
+          <ul class="chanyeUl">
+            <li><a href="#">合众思壮与中国民航二所签订合作协议，共推北斗民航应用</a><span>04-12</span></li>
+            <li><a href="#">济南：发布地理信息产业规划，打造北斗产业集群</a><span>03-18</span></li>
+            <li><a href="#">公交车还能和红绿灯“聊天”？北斗高精度让梦想照进现实</a><span>03-13</span></li>
+            <li><a href="#">成立创新中心，推动北斗系统深化应用</a><span>03-06</span></li>
+            <li><a href="#">刘经南院士：紧抓机遇，实现北斗产业爆发式增长</a><span>02-08</span></li>
+            <li><a href="#">凝聚中国航天智慧，北斗拉动经济发展</a><span>12-18</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="zhuantiBox-con">
+        <div class="zhuantiBox">
+          <div class="com-title">
+            <i></i>
+            <span>专题</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <ul class="zhuantiUl">
+            <li style="margin:0 10px 10px 0;"><a href="#"><img src="images/zhuanti1.png" alt="" /><span>官方活动</span></a></li>
+            <li style="margin:0 10px 10px 0;"><a href="#"><img src="images/zhuanti2.png" alt="" /><span>政策法规</span></a></li>
+            <li style="margin:0 0 10px 0;"><a href="#"><img src="images/zhuanti3.jpg" alt="" /><span>北斗标准</span></a></li>
+            <li style="margin:0 10px 0 0;"><a href="#"><img src="images/zhuanti4.png" alt="" /><span>导航年会</span></a></li>
+            <li style="margin:0 10px 0 0;"><a href="#"><img src="images/zhuanti5.png" alt="" /><span>新闻发布会</span></a></li>
+            <li style="margin:0 0;"><a href="#"><img src="images/zhuanti6.png" alt="" /><span>ICG-13大会</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="zhengceBox-con">
+        <div class="zhengceBox">
+          <div class="com-title">
+              <i></i>
+              <span>政策法规</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <ul class="zhengceUl">
+            <li><a href="#">济南：发布地理信息产业规划，打造北斗产业集群</a><span>03-18</span></li>
+            <li><a href="#">江苏：引导快递企业使用北斗技术</a><span>07-27</span></li>
+            <li><a href="#">规范北斗名称使用势在必行</a><span>05-31</span></li>
+            <li><a href="#">杨君琳：为北斗插上法治翅膀</a><span>05-31</span></li>
+            <li><a href="#">立法保障北斗系统健康发展</a><span>05-31</span></li>
+            <li><a href="#">湖南：利用北斗实现地灾专业监测</a><span>04-18</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ziyuanBox-con">
+        <div class="ziyuanBox">
+          <div class="com-title">
+              <i></i>
+              <span>资源</span>
+          </div>
+          <a href="javascript:;" class="bigicon"></a>
+          <div class="ziyuanBox-head">
+            <a href="#"><img src="images/ziyuanimg1.jpg" alt="" /></a>
+            <p>跨越时空之梦</p>
+          </div>
+          <ul class="ziyuanUl">
+            <li style="margin:0 10px 10px 0;"><a href="#"><img src="images/ziyuanimg2.jpg" alt="" /></a><p>第44颗北斗卫星发射</p></li>
+            <li style="margin:0 0 10px 0;"><a href="#"><img src="images/ziyuanimg3.jpg" alt="" /></a><p>第二届中阿北斗合作论坛在突尼斯成功举办</p></li>
+            <li style="margin:0 10px 0 0;"><a href="#"><img src="images/ziyuanimg4.jpg" alt="" /></a><p>北斗三号基本系统建成及提供全球服务情况发布会</p></li>
+            <li style="margin:0 0;"><a href="#"><img src="images/ziyuanimg5.jpg" alt="" /></a><p>第42、43颗北斗卫星发射</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="emailBox">
+        <a href="#"><img src="images/emailimg.png" alt="" /></a>
+      </div>
+    </div>  
+  </div>
+  <div id="bottom">
+    <div class="bottomBox">
+      <div class="youqingBox">
+        <div class="youqinglink">
+          <p>友情链接</p>
+          <ul class="youqingUl">
+            <li><a href="#">中国载人航天工程网</a></li>
+            <li><a href="#">中国航天科技集团有限公司</a></li>
+            <li><a href="#">中国航天科工集团有限公司</a></li>
+            <li><a href="#">中国科学院</a></li>
+            <li><a href="#">中国电子科技集团公司</a></li>
+            <li><a href="#">中国兵器工业集团公司</a></li>
+            <li><a href="#">中国空间技术研究院</a></li>
+            <li><a href="#">中国运载火箭技术研究院</a></li>
+            <li><a href="#">中国卫星导航系统管理办公室测试评估研究中心</a></li>
+            <li><a href="#">中国卫星导航学术年会</a></li>
+            <li><a href="#">中国卫星导航定位协会</a></li>
+          </ul>
+        </div>
+        <div class="erweima">
+          <img src="images/erweima.jpg" alt="" />
+          <p>北斗系统官方微信</p>
+        </div>
+      </div>
+      <div class="jieshaoBox">
+        <img src="images/banquan.png" alt="" />
+        <div class="jieshaoBox-con">
+          <ul class="jieshaoUl">
+            <li><a href="#">邮件服务 </a></li>
+            <span>|</span>
+            <li><a href="#">联系我们</a></li>
+            <span>|</span>
+            <li><a href="#">网站地图</a></li>
+          </ul>
+          <div class="banquan">
+            <span>北斗卫星导航系统网站 版权所有</span>
+            <span>中国卫星导航系统管理办公室主办</span>
+            <span>京ICP备05022684号-2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/index.js" async defer></script>
-  </body>
+  <script src="js/index.js" async defer></script>
+</body>
 </html>

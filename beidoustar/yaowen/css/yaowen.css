@@ -1,0 +1,219 @@
+/* 主体样式 */
+#main {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fff;
+}
+#main .left-navbar {
+  float: left;
+  width: 200px;
+  height: 260px;
+  margin-left: 20px;
+}
+#main .left-navbar p {
+  width: 185px;
+  height: 49px;
+  padding-left: 15px;
+  color: #005db5;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl {
+  width: 200px;
+  height: 250px;
+}
+#main .left-navbar #navbarUl li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl li a {
+  display: block;
+  width: 185px;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  padding-left: 15px;
+}
+#main .left-navbar #navbarUl li.navbaracT a {
+  color: #005db5;
+  background: url(../images/bz-arrowbg.png) no-repeat right center;
+}
+#main .left-navbar #navbarUl li a:hover {
+  color: #005db5;
+}
+#main .right-containar {
+  float: right;
+  width: 700px;
+  margin-right: 20px;
+  display: none;
+}
+#main .right-containar.ywactive{
+    display: block
+}
+/* 右边要闻顶部的title 页面切换样式 */
+#main .right-containar .yaowen-title {
+  width: 700px;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+#main .right-containar .yaowen-title p {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+#main .right-containar .yaowen-title .yaowen-link {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+#main .right-containar .yaowen-title .yaowen-link i {
+  display: block;
+  float: left;
+  width: 19px;
+  height: 18px;
+  margin: 16px 5px 0 0;
+  background: url(../images/cjwt-title.png) center center no-repeat;
+}
+#main .right-containar .yaowen-title .yaowen-link a {
+  font-size: 14px;
+  color: #666;
+}
+/* 右边要闻顶部的title 页面切换样式 */
+/* 右边主体部分 新闻中心官方公告  行业动态  国际动态 公用样式 */
+#main .right-containar .ywBox{
+    float: left;
+    width: 660px;
+    padding: 0 20px 20px 20px;
+    background-color: #f9f9f9;
+}
+#main .right-containar .ywBox ul{
+    float: left;
+    width: 660px;
+}
+#main .right-containar .ywBox ul li{
+    float: left;
+    width: 660px;
+    height: 49px;
+    border-bottom: 1px  dashed #ccc;
+}
+#main .right-containar .ywBox ul li a{
+    float: left;
+    height: 49px;
+    line-height: 49px;
+    font-size: 16px;
+    color: #333;
+}
+#main .right-containar .ywBox ul li a:hover{
+    color: #005db5;
+}
+#main .right-containar .ywBox ul li span{
+    float: right;
+    height: 49px;
+    line-height: 49px;
+    font-size: 16px;
+    color: #888888;
+}
+/* 右边主体部分 新闻中心官方公告  行业动态  国际动态 公用样式 */
+
+/* 右边新闻动态样式 */
+#main .right-containar .xwdtBox{
+    float: left;
+    width: 700px;
+}
+#main .right-containar .xwdtBox .xwdtBox-con{
+    float: left;
+    width: 300px;
+    margin-bottom: 20px; 
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+#main .right-containar .xwdtBox .xwdtBox-con a.contitlea{
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555555;
+}
+#main .right-containar .xwdtBox .xwdtBox-con a.conimga{
+    display: block;
+    float: left;
+    width: 290px;
+    height: 120px;   
+}
+#main .right-containar .xwdtBox .xwdtBox-con a.conimga img{
+    float: left;
+    width: 290px;
+    height: 120px;
+}
+#main .right-containar .xwdtBox .xwdtBox-con a.condesca{
+    display: block;
+    float: right;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #555;
+    background: url(../images/cjwtcarrow.png) right center no-repeat;
+}
+#main .right-containar .xwdtBox .xwdtBox-con:hover a.contitlea{
+    color: #005db5;
+}
+#main .right-containar .xwdtBox .xwdtBox-con:hover a.condesca{
+  color: #005db5;
+  background: url(../images/cjwtarrow.png) right center no-repeat;
+}
+/* 右边新闻动态样式 */
+
+/* 右边要闻底部page页码切换样式 */
+#main .right-containar .pageBox {
+  position: absolute;
+  width: 660px;
+  height: 30px;
+  line-height: 30px;
+  bottom: 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+#main .right-containar .pageBox a {
+  padding: 4px 5px;
+  margin: 0 4px;
+  font-size: 16px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+#main .right-containar .pageBox a.homepage,
+#main .right-containar .pageBox a.lastpage {
+  background-color: #e0e0e0;
+}
+#main .right-containar .pageBox a.homepage:hover,
+#main .right-containar .pageBox a.lastpage:hover {
+  background-color: #005db5;
+  color: #fff;
+}
+#main .right-containar .pageBox a.homepage-img img,
+#main .right-containar .pageBox a.lastpage-img img {
+  position: relative;
+  top: 5px;
+}
+#main .right-containar .pageBox a.hover {
+  color: #b63414;
+}
+#main .right-containar .pageBox span {
+  padding-left: 20px;
+}
+/* 右边要闻底部page页码切换样式 */

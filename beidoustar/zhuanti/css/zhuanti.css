@@ -1,0 +1,270 @@
+/* 主体样式 */
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fff;
+}
+/* 左侧导航样式 */
+#main .left-navbar {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+}
+#main .left-navbar p {
+  width: 185px;
+  height: 49px;
+  padding-left: 15px;
+  color: #005db5;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl {
+  width: 200px;
+  height: 250px;
+}
+#main .left-navbar #navbarUl li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl li a {
+  display: block;
+  width: 185px;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  padding-left: 15px;
+}
+#main .left-navbar #navbarUl li.navbaracT a {
+  color: #005db5;
+  background: url(../images/bz-arrowbg.png) no-repeat right center;
+}
+#main .left-navbar #navbarUl li a:hover {
+  color: #005db5;
+}
+#main .left-navbar #navbarUl a {
+  display: block;
+  float: left;
+  width: 185px;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  padding-left: 15px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl a:hover{
+  color: #005db5;
+}
+/* 左侧导航样式 */
+#main .right-containar {
+  float: right;
+  width: 700px;
+  margin-right: 20px;
+  display: none;
+}
+#main .right-containar-zt{
+  float: right;
+  width: 700px;
+  margin-right: 20px;
+}
+#main .right-containar.ztactive{
+    display: block;
+}
+/* 右边应用顶部的title 页面切换样式 */
+#main .right-containar .zhuanti-title ,
+#main .right-containar-zt .zhuanti-title {
+  width: 700px;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+#main .right-containar .zhuanti-title p ,
+#main .right-containar-zt .zhuanti-title p {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+#main .right-containar .zhuanti-title .zhuanti-link ,
+#main .right-containar-zt .zhuanti-title .zhuanti-link {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+#main .right-containar .zhuanti-title .zhuanti-link i ,
+#main .right-containar-zt .zhuanti-title .zhuanti-link i {
+  display: block;
+  float: left;
+  width: 19px;
+  height: 18px;
+  margin: 16px 5px 0 0;
+  background: url(../images/cjwt-title.png) center center no-repeat;
+}
+#main .right-containar .zhuanti-title .zhuanti-link a ,
+#main .right-containar-zt .zhuanti-title .zhuanti-link a {
+  font-size: 14px;
+  color: #666;
+}
+/* 右边应用顶部的title 页面切换样式 */
+
+/* 右边专题页面进入时的样式 */
+#main .right-containar .hyBox,
+#main .right-containar-zt .ztBox{
+  float: left;
+  width: 700px;
+}
+#main .right-containar .hyBox ul,
+#main .right-containar-zt .ztBox ul{
+  float: left;
+  width: 700px;
+}
+#main .right-containar .hyBox ul li,
+#main .right-containar-zt .ztBox ul li{
+  float: left;
+  width: 310px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+#main .right-containar .hyBox ul li a.contitlea,
+#main .right-containar-zt .ztBox ul li a.contitlea{
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+}
+#main .right-containar .hyBox ul li a.conimga,
+#main .right-containar-zt .ztBox ul li a.conimga{
+  display: block;
+  float: left;
+  width: 310px;
+  height: 120px;   
+}
+#main .right-containar .hyBox ul li a.conimga img,
+#main .right-containar-zt .ztBox ul li a.conimga img{
+  float: left;
+  width: 310px;
+  height: 120px;
+}
+#main .right-containar .hyBox ul li a.condesca,
+#main .right-containar-zt .ztBox ul li a.condesca{
+  display: block;
+  float: right;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #555;
+  background: url(../images/cjwtcarrow.png) right center no-repeat;
+}
+#main .right-containar .hyBox ul li:hover a.condesca,
+#main .right-containar-zt .ztBox ul li:hover a.condesca{
+  color: #005db5;
+  background: url(../images/cjwtarrow.png) right center no-repeat;
+}
+#main .right-containar .hyBox ul li:hover a.contitlea,
+#main .right-containar-zt .ztBox ul li:hover a.contitlea{
+  color: #005db5;
+}
+
+/* 右边专题页面进入时的样式 */
+
+/* 右侧官方活动样式 */
+#main .right-containar .ztBox{
+  float: left;
+  width: 660px;
+  padding: 0 20px 20px 20px;
+  background-color: #f9f9f9;
+}
+#main .right-containar .ztBox ul{
+  float: left;
+  width: 660px;
+}
+#main .right-containar .ztBox ul li{
+  width: 660px;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px dashed #dddddd;
+}
+#main .right-containar .ztBox ul li a{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+}
+#main .right-containar .ztBox ul li a:hover{
+  color: #005db5;
+}
+#main .right-containar .ztBox ul li span{
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #888888;
+}
+/* 右侧官方活动样式 */
+
+/* 右边专题底部page页码切换样式 */
+#main .right-containar .pageBox,
+#main .right-containar-zt .pageBox {
+  float: left;
+  width: 660px;
+  height: 30px;
+  line-height: 30px;
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+#main .right-containar .pageBox a,
+#main .right-containar-zt .pageBox a {
+  padding: 4px 5px;
+  margin: 0 4px;
+  font-size: 16px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+#main .right-containar .pageBox a.homepage,
+#main .right-containar .pageBox a.lastpage,
+#main .right-containar-zt .pageBox a.homepage,
+#main .right-containar-zt .pageBox a.lastpage  {
+  background-color: #e0e0e0;
+}
+#main .right-containar .pageBox a.homepage:hover,
+#main .right-containar .pageBox a.lastpage:hover,
+#main .right-containar-zt .pageBox a.homepage:hover,
+#main .right-containar-zt .pageBox a.lastpage:hover {
+  background-color: #005db5;
+  color: #fff;
+}
+#main .right-containar .pageBox a.homepage-img img,
+#main .right-containar .pageBox a.lastpage-img img,
+#main .right-containar-zt .pageBox a.homepage-img img,
+#main .right-containar-zt .pageBox a.lastpage-img img {
+  position: relative;
+  top: 5px;
+}
+#main .right-containar .pageBox a.hover,
+#main .right-containar-zt .pageBox a.hover {
+  color: #b63414;
+}
+#main .right-containar .pageBox span,
+#main .right-containar-zt .pageBox span {
+  padding-left: 20px;
+}
+/* 右边专题底部page页码切换样式 */
+/* 主体样式 */

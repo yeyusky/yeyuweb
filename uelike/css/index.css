@@ -1,0 +1,757 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) no-repeat ;
+    background-size: 1366px 625px;
+    overflow: hidden;
+    font-family: 微软雅黑, Arial;
+}
+.containar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.containar .main{
+    position: absolute;
+    width: 1100px;
+    height: 508px;
+    top: -213;
+    left: 133px;
+}
+.containar .main .left{
+    position: absolute;
+    width: 364px;
+    height: 308px;
+    top: -19px;
+    left: 42px;
+    /* z-index: 10; */
+}
+.containar .main .left a{
+    position: absolute;
+    display: block;
+    width: 268px;
+    height: 51px;
+    left: 95px;
+    top: 102px;
+    background: url(../images/indexlogo2.png) center center no-repeat;
+}
+.containar .main .left a:hover{
+    background: url(../images/indexlogo1.png) center center no-repeat;
+}
+.containar .main .center{
+    position: absolute;
+    width: 918px;
+    height: 508px;
+    top: -14px;
+    left: 35px;
+    /* z-index: 8; */
+}
+.containar .main .center a{
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 797px;
+    top: 262px;
+    background: url(../images/blog2.png) center center no-repeat;
+}
+.containar .main .center a:hover{
+    background: url(../images/blog1.png) center center no-repeat;
+}
+.containar .main .right{
+    position: absolute;
+    width: 353px;
+    height: 538px;
+    left: 805px;
+    top: 54px;
+    /* z-index: 6; */
+}
+.containar .link{
+    position: absolute;
+    width: 69px;
+    height: 105px;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+}
+.containar .link a{
+    display: block;
+    width: 69px;
+    height: 105px;
+    background: url(../images/link-left.png) center center no-repeat;
+}
+/* 新闻样式 */
+.containar .news{
+    position: absolute;
+    width: 444px;
+    height: 500px;
+    left: 900px;
+    top: 30px;
+    background: url(../images/newsbg.png) no-repeat;
+    z-index: 20;
+    overflow: hidden;
+}
+.containar .news .newsmain{
+    position: absolute;
+    width: 410px;
+    height: 434px;
+    left: 24px;
+    top: 66px;
+}
+.containar .news .newsmain .newsitem{
+    position: absolute;
+    display: none;
+    width: 410px;
+    height: 400px;
+    left: 0;
+    top: 0;
+}
+.containar .news .newsmain .newsitem.newsactive{
+    display: block;
+}
+.containar .news .newsmain .newsitem .newstitle{
+    position: absolute;
+    float: right;
+    width: 380px;
+    height: 50px;
+    right: -2px;
+    top: -48px;
+    line-height: 50px;
+    text-indent: 90px; /* 首行文本缩进 */
+    font-size: 13px;
+    color: #737373;
+}
+.containar .news .newsmain .newsitem .newsimg{
+    display: block;
+    position: absolute;
+    width: 376px;
+    height: 213px;
+    margin-bottom: 10px;
+    top: 20px;
+    left: 14px;
+}
+.containar .news .newsmain .newsitem .newsimg .diandian{
+    display: none;
+    position: absolute;
+    width: 376px;
+    height: 213px;
+    left: 0;
+    top: 0;
+    background: url(../images/diandian.png) no-repeat;
+}
+.containar .news .newsmain .newsitem .newscon{
+    position: absolute;
+    width: 346px;
+    padding: 10px 15px;
+    left: 14px;
+    top: 243px;
+}
+.containar .news .newsmain .newsitem .newscon p{
+    position: absolute;
+    width: 346px;
+    line-height: 22px;
+    font-size: 13px;
+    color: #737373;
+}
+.containar .news .newsmain .newspage{
+    position: absolute;
+    width: 40px;
+    height: 19px;
+    left: 16px;
+    bottom: 8px;
+}
+.containar .news .newsmain .newspage li{
+    float: left;
+    width: 16px;
+    height: 19px;
+    margin-left: 4px;
+}
+.containar .news .newsmain .newspage li a{
+    display: block;
+    width: 16px;
+    height: 19px;
+    background: url(../images/npage1.jpg) no-repeat;
+}
+.containar .news .newsmain .newspage li a:hover{
+    background: url(../images/npage2.jpg) no-repeat;    
+}
+.containar .news .newsmain .newspage li.on a{
+    background: url(../images/npage2.jpg) no-repeat;
+}
+.containar .news .ctrl a{
+    display: block;
+    position: absolute;
+    width: 41px;
+    height: 39px;
+    top: -2px;
+    left: 0px;
+}
+.containar .news .ctrl a#open{
+    background: url(../images/newsopen.png) no-repeat;
+}
+.containar .news .ctrl a#close{
+    display: none;
+    background: url(../images/newsclose.png) no-repeat;
+}
+/* 新闻样式 */
+
+/* 轮播样式 */
+.containar .lbitem{
+    position: absolute;
+    width: 383px;
+    height: 282px;
+    right: 0;
+    top: 320px;
+    background: url(../images/lbbg.png) no-repeat;
+    z-index: 20;
+}
+.containar .lbitem .lbcon{
+    position: absolute;
+    overflow: hidden;
+    width: 223px;
+    height: 150px;
+    left: 123px;
+    top: 42px;
+}
+.containar .lbitem .lbcon ul{
+    position: absolute;
+    width: 1115px;
+    height: 150px;
+    left: -223px;
+}
+.containar .lbitem .lbcon ul li{
+    position: relative;
+    float: left;
+    width: 223px;
+    height: 150px;
+}
+.containar .lbitem .lbcon ul li a{
+    display: block;
+    width: 223px;
+    height: 150px;
+}
+.containar .lbitem .lbcon ul li a img{
+    width: 223px;
+    height: 150px;
+}
+.containar .lbitem .lbcon ul li .lbimgtext{
+    position: absolute;
+    width: 203px;
+    height: 40px;
+    padding: 0 10px;
+    bottom: -40px;
+    left: 0;
+    background-color: #99c228;
+}
+.containar .lbitem .lbcon ul li .lbimgtext span{
+    display: block;
+    float: left;
+    width: 101px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #fff;
+}
+.containar .lbitem .lbcon ul li .lbimgtext span.num{
+    float: right;
+    text-align: right;
+}
+.containar .lbitem .lbcon ul li .lblook{
+    position: absolute;
+    width: 43px;
+    height: 47px;
+    left: 90px;
+    top: -52px;
+}
+.containar .lbitem .lbcon ul li .lblook a{
+    display: block;
+    width: 43px;
+    height: 47px;
+}
+.containar .lbitem .lbcon ul li .lblook a img{
+    width: 43px;
+    height: 47px;
+}
+.containar .lbitem .ctrlarrow{
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    right: 30px;
+    top: 12px;
+}
+.containar .lbitem .ctrlarrow a{
+    float: left;
+    width: 24px;
+    height: 20px;
+}
+.containar .lbitem .ctrlarrow a.prev{
+    background: url(../images/lbprev.gif) 0 0 no-repeat;
+}
+.containar .lbitem .ctrlarrow a.next{
+    background: url(../images/lbnext.gif) 0 0 no-repeat;
+}
+/* 轮播样式 */
+
+/* 导航栏样式 */
+.containar .navbar{
+    position: absolute;
+    width: 642px;
+    height: 87px;
+    left: 10px;
+    top: 500px;
+    background: url(../images/navbg.png) no-repeat;
+    z-index: 40;
+}
+.containar .navbar ul{
+    position: relative;
+    margin:0 0 0 190px;
+    width: 450px;
+    height: 87px;
+}
+.containar .navbar ul li{
+    position: relative;
+    float: left;
+    width: 87px;
+    height: 87px;
+    z-index: 9;
+}
+.containar .navbar ul li.active{
+    width: 87px;
+    height: 87px;
+}
+.containar .navbar ul li a{
+    display: block;
+    width: 87px;
+    height: 87px;
+    line-height: 87px;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+}
+.containar .navbar ul .navmove{
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    top: 0;
+    left: 0;
+    background: url(../images/nava.png) no-repeat;
+    z-index: 2;
+}
+/* 导航栏样式 */
+
+/* 导航栏内容样式 */
+
+.containar .navcon{
+    position: absolute;
+    width: 100%;
+    height: 362px;
+    top: 655px;
+    left: 0;
+    z-index:30;
+    background: #fff;
+}
+/* 案例展示样式 */
+.containar .navcon .anlishow{
+    width: 96%;
+    height: 304px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+.containar .navcon .anlishow ul{
+    position: absolute;
+    width: 2000px;
+    height: 280px;
+}
+.containar .navcon .anlishow ul li{
+    position: relative;
+    float: left;
+    width: 238px;
+    height: 264px;
+    margin-right: 15px;
+    
+}
+.containar .navcon .anlishow ul li .anliimg{
+    position: relative;
+    overflow: hidden;
+    width: 238px;
+    height: 168px;
+    background-color: #ececec;
+}
+.containar .navcon .anlishow ul li .anliimg a{
+    position: absolute;
+    display: block;
+    width: 220px;
+    height: 150px;
+    left: 9px;
+    top: 9px;
+}
+.containar .navcon .anlishow ul li .anliimg a img{
+    width: 220px;
+    height: 150px;
+}
+.containar .navcon .anlishow ul li .anliimg .lbimgtext{
+    position: absolute;
+    width: 218px;
+    height: 40px;
+    padding: 0 10px;
+    bottom: -40px;
+    left: 0;
+    background-color: #99c228;
+}
+.containar .navcon .anlishow ul li .anliimg .lbimgtext span{
+    display: block;
+    float: left;
+    width: 101px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #fff;
+}
+.containar .navcon .anlishow ul li .anliimg .lbimgtext span.num{
+    float: right;
+    text-align: right;
+}
+.containar .navcon .anlishow ul li .anliimg .lblook{
+    position: absolute;
+    width: 43px;
+    height: 47px;
+    left: 98px;
+    top: -55px;
+}
+.containar .navcon .anlishow ul li .anliimg .lblook a{
+    display: block;
+    width: 43px;
+    height: 47px;
+}
+.containar .navcon .anlishow ul li .anliimg .lblook a img{
+    width: 43px;
+    height: 47px;
+}
+.containar .navcon .anlishow ul li .anlitext{
+    width: 236px;
+    height: 90px;
+    margin-top: 2px;
+    border: 1px solid #f4f4f4;
+    background-color: #f4f4f4;
+}
+.containar .navcon .anlishow ul li .anlitext a{
+    display: block;
+    width: 220px;
+    height: 30px;
+    margin: 0 9px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #515151;
+}
+.containar .navcon .anlishow ul li .anlitext a:hover{
+    text-decoration: underline;
+}
+.containar .navcon .anlishow ul li .anlitext p{
+    display: block;
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 9px;
+    font-size: 13px;
+    color: #939393;
+}
+.containar .navcon .anlishow ul li .anlitext p a{
+    display: inline;
+    line-height: 20px;
+    font-size: 13px;
+    color: #939393;
+    margin: 0;
+}
+/* 案例展示样式 */
+/* 服务内容样式 */
+.containar .navcon .fuwushow{
+    position: relative;
+    width: 96%;
+    height: 304px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+.containar .navcon .fuwushow .fuwuimg{
+    position: absolute;
+    width: 948px;
+    height: 267px;
+    left: 50%;
+    top: 50%;
+    margin: -134px 0 0 -474px;
+}
+.containar .navcon .fuwushow .fuwuimg img{
+    width: 948px;
+    height: 267px;
+}
+/* 服务内容样式 */
+/* 关于我们样式 */
+.containar .navcon .aboutshow{
+    position: relative;
+    width: 72%;
+    height: 304px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+}
+.containar .navcon .aboutshow p{
+    float: left;
+    display: block;
+    width: 522px;
+    height: 260px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #6f6f6f;
+}
+.containar .navcon .aboutshow img{
+    float: left;
+    width: 441px;
+    height: 278px;
+}
+/* 关于我们样式 */
+/* 联系我们样式 */
+.containar .navcon .lianxishow{
+    position: relative;
+    width: 80%;
+    height: 304px;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+}
+.containar .navcon .lianxishow img{
+    float: left;
+    width: 158px;
+    height: 150px;
+}
+.containar .navcon .lianxishow .input{
+    float: left;
+    width: 324px;
+    height: 280px;
+    margin-top: -8px;
+}
+.containar .navcon .lianxishow .input #name,
+.containar .navcon .lianxishow .input #tel,
+.containar .navcon .lianxishow .input #email{
+    width: 322px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #8a8a8a;
+    text-indent: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    outline: none;
+}
+.containar .navcon .lianxishow .input #content{
+    width: 312px;
+    height: 94px;
+    padding: 10px 0 0 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: 微软雅黑, Arial;
+    color: #8a8a8a;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    outline: none;
+}
+.containar .navcon .lianxishow .input #submit{
+    width: 70px;
+    height: 28px;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #99c228;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.containar .navcon .lianxishow .input input:hover:not(#submit),
+.containar .navcon .lianxishow .input #content:hover{
+    background-color: #ffffff;
+    border-color: #99c228;
+}
+.containar .navcon .lianxishow p{
+    float: left;
+    display: block;
+    width: 327px;
+    height: 230px;
+    margin-left: 60px;
+    font: 12px/26px 微软雅黑, Arial;
+    color: #6f6f6f;
+}
+.containar .navcon .lianxishow p span{
+    font-size: 18px;
+}
+.containar .navcon .lianxishow p a{
+    color: #99c228;
+    text-decoration: underline;
+}
+.containar .navcon .lianxishow p a:hover{
+    text-decoration: none;
+}
+/* 联系我们样式 */
+/* 关闭样式 */
+.containar .navcon .closed{
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    top: -29px;
+    right: 30px;
+    background: url(../images/closed.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+.containar .navcon .closed:hover{
+    background-position: 0 -29px;
+}
+/* 关闭样式 */
+/* 向下箭头样式 */
+.containar .navcon .albarrow{
+    position: absolute;
+    width: 31px;
+    height: 14px;
+    bottom: -14px;
+    left: 315px;
+    background: url(../images/barrow.png) no-repeat;
+}
+.containar .navcon .fwbarrow{
+    position: absolute;
+    width: 31px;
+    height: 14px;
+    bottom: -14px;
+    left: 402px;
+    background: url(../images/barrow.png) no-repeat;
+}
+.containar .navcon .gybarrow{
+    position: absolute;
+    width: 31px;
+    height: 14px;
+    bottom: -14px;
+    left: 489px;
+    background: url(../images/barrow.png) no-repeat;
+}
+.containar .navcon .lxbarrow{
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    bottom: -15px;
+    left: 576px;
+    background: url(../images/lxbarrow.png) no-repeat;
+}
+/* 向下箭头样式 */
+/* 导航栏内底部导航栏样式 */
+.containar .navcon .bottomnav{
+    width: 100%;
+    height: 28px;
+    background-color: #a3a5a6;
+}
+.containar .navcon .bottomnav ul{
+    position: relative;
+    width: 96%;
+    height: 28px;
+    margin: 0 auto;
+}
+.containar .navcon .bottomnav ul li{
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 28px;
+    margin-right: 5px;
+    z-index: 2;
+}
+.containar .navcon .bottomnav ul li.bnavactive a{
+    color: #6f6f6f;
+}
+.containar .navcon .bottomnav ul li a{
+    display: block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+    color: #fefefe;
+    text-align: center;
+}
+.containar .navcon .bottomnav ul .bnavbg{
+    position: absolute;
+    width: 80px;
+    height: 27px;
+    top: 0;
+    left: 0;
+    background: url(../images/bnavbg.jpg) no-repeat;
+    z-index: 1;
+}
+/* 导航栏内底部导航栏样式 */
+/* 导航栏内容样式 */
+/* 搜索的样式 */
+.containar .search{
+    position: absolute;
+    width: 239px;
+    height: 26px;
+    right: 20px;
+    bottom: 40px;
+    background: url(../images/searchbg.png) no-repeat;
+    z-index: 999;
+}
+.containar .search #searchcon{
+    float: left;
+    width: 177px;
+    height: 25px;
+    margin-left: 26px;
+    margin-top: 1px;
+    padding: 0;
+    font-size: 12px;
+    color: #adadad;
+    border: 0;
+    outline: none;
+}
+.containar .search #searchbtn{
+    float: left;
+    width: 36px;
+    height: 25px;
+    background: url(../images/searchbtn.png) no-repeat;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+/* 搜索的样式 */
+/* 底部样式 */
+.containar .footer{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+}
+.containar .footer .footerleft{
+    float: left;
+    width: 458px;
+    height: 30px;
+    margin-left: 30px;
+}
+.containar .footer .footerright{
+    float: right;
+    width: 336px;
+    height: 30px;
+    margin-right: 30px;
+}
+.containar .footer .footerright a{
+    display: block;
+    float: left;
+    width: 84px;
+    height: 30px;
+    overflow: hidden;
+}
+.containar .footer .footerright a img{
+    float: left;
+    position: relative;
+    
+}
+/* 底部样式 */

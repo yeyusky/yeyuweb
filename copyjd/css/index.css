@@ -1,0 +1,653 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #f0f3ef;
+}
+.container{
+    width: 100%;
+}
+.container .top{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #e3e4e5;
+}
+.container .top .topcon{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+/* 顶部定位城市样式 */
+.container .top .topcon .city{
+    position: relative;
+    float: left;
+    width: 268px;
+    height: 30px;
+    z-index: 3;
+}
+.container .top .topcon .city .citytext{
+    position: relative;
+    float: right;
+    width: 70px;
+    height: 30px;
+}
+.container .top .topcon .city .citytext .citytitle{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    z-index: 2;
+}
+.container .top .topcon .city .citytext .city-i{
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 8px 4px;
+    background: url(../images/cityicon.png) no-repeat;
+}
+.container .top .topcon .city .citytext span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .city .citys{
+    position: absolute;
+    width: 300px;
+    padding: 0 10px;
+    left: -1px;
+    top: 29px;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+}
+.container .top .topcon .city .citys dl{
+    overflow: hidden;
+    width: 300px;
+    padding: 20px 0;
+    border-bottom: 1px dashed #e3e4e5;
+
+}
+.container .top .topcon .city .citys dl dd{
+    float: left;
+    width: 60px;
+    
+}
+.container .top .topcon .city .citys dl dd a{
+    height: 24px;
+    line-height: 24px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .city .citys dl dd a.ctactive{
+    background-color: red;
+    color: #fff;
+}
+.container .top .topcon .city .citys dl dd a:hover:not(.ctactive){
+    background-color: #e3e4e5;
+    color: red;
+}
+.container .top .topcon .city .citys .zwarea{
+    width: 300px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e3e4e5;
+}
+.container .top .topcon .city .citys .zwarea p{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .city .citys .zwarea a{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .city .citys .zwarea a:hover{
+    color: red;
+}
+.container .top .topcon .city .citys .gjarea{
+    width: 300px;
+    padding: 10px 0;
+}
+.container .top .topcon .city .citys .gjarea p{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .city .citys .gjarea ul{
+    overflow: hidden;
+    width: 290px;
+    padding-left: 10px;
+}
+.container .top .topcon .city .citys .gjarea ul li{
+    float: left;
+    width: 145px;
+    height: 30px;
+}
+.container .top .topcon .city .citys .gjarea ul li a{
+    width: 145px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .city .citys .gjarea ul li a i.gjicon1{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 12px;
+    margin: 10px 10px 0 0;
+    background: url(../images/gjareaicon.png) no-repeat;
+    background-position: 0 0;
+}
+.container .top .topcon .city .citys .gjarea ul li a i.gjicon2{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 10px 10px 0 0;
+    background: url(../images/gjareaicon.png) no-repeat;
+    background-position: -20px 0;
+}
+.container .top .topcon .city .citys .gjarea ul li a i.gjicon3{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 10px 10px 0 0;
+    background: url(../images/gjareaicon.png) no-repeat;
+    background-position: 0px -17px;
+}
+.container .top .topcon .city .citys .gjarea ul li a i.gjicon4{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 10px 10px 0 0;
+    background: url(../images/gjareaicon.png) no-repeat;
+    background-position: -40px 0;
+}
+.container .top .topcon .city .citys .gjarea ul li a i.gjicon5{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 10px 10px 0 0;
+    background: url(../images/gjareaicon.png) no-repeat;
+    background-position: -20px -17px;
+}
+.container .top .topcon .city .citys .gjarea a:hover{
+    color: red;
+}
+/* 顶部定位城市样式 */
+/* 顶部导航栏样式 */
+.container .top .topcon .topnav{
+    position: relative;
+    float: right;
+    width: 730px;
+    height: 30px;
+    z-index: 10;
+}
+.container .top .topcon .topnav ul{
+    width: 730px;
+    height: 30px;
+}
+.container .top .topcon .topnav ul li{
+    position: relative;
+    height: 30px;
+    float: left;
+}   
+.container .top .topcon .topnav ul li .list-title{
+    position: relative;
+    height: 30px;
+    padding: 0 8px;
+    border-left: 1px solid #e3e4e5;
+    border-right: 1px solid #e3e4e5;
+    z-index: 5;
+}
+.container .top .topcon .topnav ul li a:hover{
+    color: red;
+}
+.container .top .topcon .topnav ul li a{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+}
+.container .top .topcon .topnav ul li i{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 8px 0 0 3px;
+    background: url(../images/barrow.png) no-repeat;
+}
+.container .top .topcon .topnav ul span{
+    float: left;
+    display: block;
+    width: 1px;
+    height: 12px;
+    margin: 10px 5px 0 5px;
+    background-color: #999;
+}
+.container .top .topcon .topnav ul li .list-con{
+    display: none;
+}
+.container .top .topcon .topnav ul li .list-con1{
+    position: absolute;
+    width: 190px;
+    top: 29px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+}
+.container .top .topcon .topnav ul li .list-con1 dl{
+    display: block;
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+}
+.container .top .topcon .topnav ul li .list-con1 dl dd{
+    float: left;
+    width: 75px;
+    height: 24px;
+    padding-left: 15px;
+}
+.container .top .topcon .topnav ul li .list-con1 dl dd a{
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.container .top .topcon .topnav ul li .list-con2{
+    position: absolute;
+    width: 190px;
+    top: 29px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+}
+.container .top .topcon .topnav ul li .list-con2 dl{
+    display: block;
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+}
+.container .top .topcon .topnav ul li .list-con2 dl dd{
+    float: left;
+    width: 75px;
+    height: 24px;
+    padding-left: 15px;
+}
+.container .top .topcon .topnav ul li .list-con2 dl dd a{
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.container .top .topcon .topnav ul li .list-con3{
+    position: absolute;
+    width: 190px;
+    top: 29px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+}
+.container .top .topcon .topnav ul li .list-con3 dl{
+    display: block;
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+}
+.container .top .topcon .topnav ul li .list-con3 dl dt{
+    width: 160px;
+    height: 24px;
+    padding-left: 10px; 
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+.container .top .topcon .topnav ul li .list-con3 dl dd{
+    float: left;
+    width: 75px;
+    height: 24px;
+    padding-left: 15px;
+}
+.container .top .topcon .topnav ul li .list-con3 dl dd a{
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.container .top .topcon .topnav ul li .list-con4{
+    position: absolute;
+    width: 1200px;
+    padding: 10px 0;
+    top: 29px;
+    right: -105px;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+    z-index: 4;
+}
+.container .top .topcon .topnav ul li .list-con4 dl{
+    float: left;
+    overflow: hidden;
+    padding-left:10px;
+}
+.container .top .topcon .topnav ul li .list-con4 dl dt{
+    width: 350px;
+    height: 24px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+.container .top .topcon .topnav ul li .list-con4 dl dd{
+    float: left;
+    width: 75px ;
+    height: 24px;
+    padding-left:10px;
+}
+.container .top .topcon .topnav ul li .list-con4 dl dd a{
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+}
+.container .top .topcon .topnav ul li .list-con dl dd a:hover{
+    color: red;
+}
+.container .top .topcon .topnav ul li .phma{
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    right: 0;
+    top: 30px;
+    border: 1px solid #cfcfcf;
+}
+.container .top .topcon .topnav ul li .phma img{
+    width: 60px;
+    height: 60px;
+    margin: 4px 3px 0 3px;
+}
+.container .top .topcon .topnav ul li .phma span.phicon{
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    left: 50%;
+    margin-left: -10px;
+    top: -22px;
+    background: url(../images/phicon.png) 0 0 no-repeat;
+}
+.container .top .topcon .topnav ul li .phcon{
+    position: absolute;
+    display: none;
+    width: 190px;
+    right: 0px;
+    top: 30px;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-bottom: 3px solid #60575a;
+}
+.container .top .topcon .topnav ul li .phcon span.phconicon{
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: 136px;
+    top: -24px;
+    background: url(../images/phconicon.png) 0 0 no-repeat;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item{
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px solid #E7E7E7;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .ewma{
+    float: left;
+    width: 74px;
+    height: 74px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .ewma img{
+    width: 70px;
+    height: 70px;
+    margin: 2px 0 0 2px;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con{
+    float: right;
+    width: 100px;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con h5 a{
+    display: block;
+    width: 100px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con p{
+    float: left;
+    display: block;
+    width: 100px;
+    height: 15px;
+    line-height: 15px;
+    margin: 3px 0;
+    font-size: 12px;
+    color: #F10214;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con .mobile{
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con .mobile a{
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background: url(../images/mobileimg.png) 0 0 no-repeat;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con .mobile a.mobileimg1{
+    background-position: 0 0;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con .mobile a.mobileimg2{
+    background-position: 0 -26px;
+}
+.container .top .topcon .topnav ul li .phcon .phcon-item .phcon-item-con .mobile a.mobileimg3{
+    background-position: 0 -52px;
+}
+/* 顶部导航栏样式 */
+/* 头部样式 */
+.container .header{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    z-index: 2;
+}
+.container .header .headercon{
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+}
+.container .header .headercon .logo{
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 140px;
+    border-bottom: 1px solid #ededed;
+    
+    /* box-shadow:  */
+}
+.container .header .headercon .logo img{
+    position: absolute;
+    left: 0;
+    top: -31px;
+}
+.container .header .headercon .search{
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 140px;
+    margin-left: 10px;
+}
+.container .header .headercon .search .form{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    top: 25px;
+    left: 110px;
+    background-color: #fff;
+}
+.container .header .headercon .search .form input{
+    width: 450px;
+    height: 25px;
+    line-height: 25px;
+    padding: 5px 45px 5px 5px;
+    font-size: 14px;
+    color: #000;
+    border: 0;
+    outline: none;
+}
+.container .header .headercon .search .form span{
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 15px;
+    top: 10px;
+    right: 65px;
+    background: url(../images/sprite-photo-search.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+}
+.container .header .headercon .search .form span:hover{
+    background-position: -30px 0;
+}
+.container .header .headercon .search .form button{
+    float: right;
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.container .header .headercon .search .form button i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 7px 0 0 15px;
+    background: url(../images/searchicon.png) no-repeat;
+}
+.container .header .headercon .search .dropdown{
+    position: absolute;
+    width: 190px;
+    height: 35px;
+    top: 25px;
+    right: 115px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.container .header .headercon .search .dropdown .shopcar{
+    position: relative;
+    width: 188px;
+    height: 35px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;  
+    background-color: #fff;
+    z-index: 5;
+}
+.container .header .headercon .search .dropdown .shopcar i.caricon{
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    left: 45px;
+    top: 10px;
+    background: url(../images/shopcar.png) no-repeat;
+}
+.container .header .headercon .search .dropdown .shopcar a{
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    line-height: 16px;
+    left: 65px;
+    top: 10px;
+    font-size: 12px;
+    color: #f10215;
+}
+.container .header .headercon .search .dropdown .shopcar i.carnum{
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    right: 45px;
+    font-size: 12px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: #f10215;
+    border-radius: 50%;
+}
+.container .header .headercon .search .dropdown .shopcarcon{
+    position: absolute;
+    display: none;
+    width: 308px;
+    right: 0;
+    top: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+}
+.container .header .headercon .search .dropdown .shopcarcon .shopcarcon-text{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 0;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    z-index: 2;
+}
+.container .header .headercon .search .dropdown .shopcarcon .shopcarcon-text i.car-img{
+    display: inline-block;
+    width: 57px;
+    height: 49px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../images/carimg.png) no-repeat;
+}
+/* 头部样式 */

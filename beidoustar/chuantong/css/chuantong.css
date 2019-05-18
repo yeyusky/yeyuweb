@@ -1,0 +1,168 @@
+/* 主体样式 */
+#main {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fff;
+}
+/* 左侧导航样式 */
+#main .left-navbar {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+}
+#main .left-navbar p {
+  width: 185px;
+  height: 49px;
+  padding-left: 15px;
+  color: #005db5;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl {
+  width: 200px;
+  height: 250px;
+}
+#main .left-navbar #navbarUl li {
+  float: left;
+  width: 200px;
+  height: 50px;
+  border-bottom: 1px solid #dddddd;
+}
+#main .left-navbar #navbarUl li a {
+  display: block;
+  width: 185px;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  padding-left: 15px;
+}
+#main .left-navbar #navbarUl li.navbaracT a {
+  color: #005db5;
+  background: url(../images/bz-arrowbg.png) no-repeat right center;
+}
+#main .left-navbar #navbarUl li a:hover {
+  color: #005db5;
+}
+/* 左侧导航样式 */
+#main .right-containar {
+  float: right;
+  width: 700px;
+  margin-right: 20px;
+  display: none;
+}
+#main .right-containar.ctactive{
+    display: block;
+}
+/* 右边系统顶部的title 页面切换样式 */
+#main .right-containar .chuantong-title {
+  width: 700px;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+#main .right-containar .chuantong-title p {
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+#main .right-containar .chuantong-title .chuantong-link {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+#main .right-containar .chuantong-title .chuantong-link i {
+  display: block;
+  float: left;
+  width: 19px;
+  height: 18px;
+  margin: 16px 5px 0 0;
+  background: url(../images/cjwt-title.png) center center no-repeat;
+}
+#main .right-containar .chuantong-title .chuantong-link a {
+  font-size: 14px;
+  color: #666;
+}
+/* 右边系统顶部的title 页面切换样式 */
+
+/* 右侧北斗标识的样式 */
+#main .right-containar .bsBox{
+    float: left;
+    width: 700px;
+}
+#main .right-containar .bsBox .desc{
+    width: 660px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #005db5;
+}
+#main .right-containar .bsBox .bsBox-con{
+    float: left;
+    width: 660px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+#main .right-containar .bsBox .bsBox-con p{
+    line-height: 22px;
+    font-size: 16px;
+    color: #333;
+    text-indent: 2em;
+    text-align:justify;
+    margin-bottom: 20px;
+}
+#main .right-containar .bsBox .bsBox-con img{
+  margin: 0 0 30px 210px;
+}
+/* 右侧北斗标识样式 */
+
+/* 右侧北斗精神样式 */
+#main .right-containar .jsBox{
+  float: left;
+  width: 700px;
+  height: 600px;
+}
+#main .right-containar .jsBox .desc{
+  width: 660px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #005db5;
+}
+#main .right-containar .jsBox .jsBox-con{
+  float: left;
+  width: 660px;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+#main .right-containar .jsBox .jsBox-con p{
+  width: 660px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+/* 右侧北斗精神样式 */
+/* 主体样式 */
