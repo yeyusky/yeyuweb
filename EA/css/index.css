@@ -45,24 +45,60 @@ p{
 .loritem{
     padding: 250px 0 250px 0;
 }
-.lorbg span{
-    margin-top: 40px;
-    font-size: 30px;
-    color: #fff;
+.lorbg ul li{
+    float: right;
 }
-.lorbg ul{
-    margin-top: 20px;
+.lorbg .search{
+    margin: 25px 0 0 15px;
+}
+.lorbg .navcon{
+    margin: 0 0 0 15px;
 }
 .lorbg ul li a{
-    font-size: 22px;
     font-family: "marks";
     color: #fff;
+    padding: 10px 30px;
 }
 .lorbg p{
     color: #fff;
 }
 .lorbg h2{
     color: #fff;
+}
+.lorbg .mymodal{
+    width: 70%;
+    margin: 50px auto 0 auto;
+    background-color: #fff;
+}
+.lorbg .mymodal .modal-header{
+    background-color: #d28bfc;
+}
+@media (max-width:768px){
+    .lorbg .navcon{
+        position: absolute;
+        right: 20px;
+        width: 80%;
+       
+    }
+    .lorbg ul li{
+        float: left;
+        width: 100%;
+        margin: 5px 0 0 0;  
+    }
+    .lorbg ul li a{
+        float: left;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;
+        font-family: "marks";
+        background: #999999;
+    }
+}
+.lorbg .show{
+    width: 100%;
+
 }
 .whoitem1{
     margin-top: 30px;
