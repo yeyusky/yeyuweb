@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>后台管理界面--更新图片</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+      .uppicid {
+        position: absolute;
+        width: 230px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+        left: 20px;
+        top: 20px;
+        font-size: 18px;
+        color: #000000;
+        border: 0;
+        outline: none;
+      }
+      span{
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 20px;
+        line-height: 20px;
+        left: 20px;
+        top: 60px;
+        font-size: 14px;
+        color: red;
+      }
+      .uppic{
+        position: absolute;
+        margin-top: 50px;
+        left: 20px;
+        top: 60px;
+      }
+      .btn{
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        left: 20px;
+        top: 180px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #6565f0;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <form action="/admin/uppic" method="post" enctype="multipart/form-data">
+      <input type="text" name="id" class="uppicid"/>
+      <span>选择需要替换的图片ID</span>
+      <input type="file" name="pic" class="uppic"/>
+      <input type="submit" class="btn" />
+    </form>
+    <script src="" async defer></script>
+  </body>
+</html>

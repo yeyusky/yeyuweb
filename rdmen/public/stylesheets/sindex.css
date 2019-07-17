@@ -1,0 +1,53 @@
+.container .main{
+  position: relative;
+  width: 100%;
+  height: 595px;
+  margin-top: -83px;
+}
+.container .main .main-lbbox{
+  width: 100%;
+  height: 100%;
+}
+.container .main .main-lbbox .lbbox ul{
+  width: 100%;
+  height: 100%;
+}
+.container .main .main-lbbox .lbbox ul li{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+.container .main .main-lbbox .lbbox ul li:nth-child(1){
+  opacity: 1;
+}
+.container .main .main-lbbox .lbbox ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container .main .main-lbbox .lbbox ul li a img{
+  width: 100%;
+  height: 100%;
+}
+.container .main .lbbtn{
+  position: absolute;
+  width: 42px;
+  height: 88px;
+  right: 77px;
+  top: 58%;
+}
+.container .main .lbbtn span{
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.container .main .lbbtn span.lbactive{
+  background-color: #3abeee;
+}

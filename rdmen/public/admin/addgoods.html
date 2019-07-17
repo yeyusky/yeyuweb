@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <style>
+    .gid {
+      width: 600px;
+      height: 40px;
+      margin: 20px 0 0 20px;
+      padding-left: 30px;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid blue;
+      outline: none;
+    }
+    .gtitle {
+      width: 600px;
+      height: 40px;
+      margin: 20px 0 0 20px;
+      padding-left: 30px;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid blue;
+      outline: none;
+    }
+    .gdesc {
+      width: 600px;
+      height: 40px;
+      margin: 20px 0 0 20px;
+      padding-left: 30px;
+      font-size: 16px;
+      color: #000000;
+      border: 1px solid blue;
+      outline: none;
+    }
+    .gpic{
+        position: absolute;
+        left: 30px;
+        top: 250px;
+      }
+      .btn{
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        left: 30px;
+        top: 300px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #6565f0;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+      }
+  </style>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <form action="/admin/upgoods" method="post" enctype="multipart/form-data">
+    <input type="text" name="gid" class="gid" value="商品的id，用来区分是哪个系列的商品"/>
+    <input type="text" name="gtitle" class="gtitle" value="商品的标题"/>
+    <input type="text" name="gdesc" class="gdesc" value="商品的描述"/>
+    <input type="file" name="gpic" class="gpic" />
+    <input type="submit" value="添加" class="btn" />
+  </form>
+  <script src="" async defer></script>
+</body>
+
+</html>

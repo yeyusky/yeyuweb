@@ -24,7 +24,11 @@
     <div id="top">
         <div class="top-con">
             <p>2018年11月23日 星期五</p>
-            <div class="top-left"></div>
+            <div class="top-left" id="wxin">
+                <div class="ewm" id="ewm">
+                  <img src="images/erweima.jpg" alt="" />
+                </div>
+              </div>
             <div class="top-right">
                 <a href="#">中文</a>
                 <div class="top-fg">|</div>
@@ -52,12 +56,19 @@
         <img src="images/logo.png" alt="北斗卫星导航" />
         <div class="containar">
             <div class="search-con">
-                <div class="select">全部</div>
-                <form class="search">
+                <div class="select" id="sel">
+                    <a href="javascripr:;">全部<i class="selecticon"></i></a>
+                    <ul id="selUl">
+                      <li><a href="javascript:;">文本</a></li>
+                      <li><a href="javascript:;">图片</a></li>
+                      <li><a href="javascript:;">视频</a></li>
+                    </ul>
+                  </div>
+                  <form class="search">
                     <div class="search-icon"></div>
-                    <input class="search-in" type="text" value="搜索您需要的内容..." />
+                    <input class="search-in" id="searchIn" type="text" value="搜索您需要的内容..." />
                     <button class="btn1">搜索</button>
-                </form>
+                  </form>
             </div>
             <a href="../login.html" target="_blank" class="btn2">邮箱登录</a>
         </div>

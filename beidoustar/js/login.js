@@ -8,7 +8,10 @@ window.onload = function() {
         }
     }
     User.onblur = function() {
-        User.value = "用户名";
+        var usertext = User.value;
+        if(usertext == ""){
+            User.value = "用户名";
+        }
     }
     Pass.onfocus = function() {
         var passtext = Pass.value;
@@ -18,7 +21,11 @@ window.onload = function() {
         Pass.type = "password";
     }
     Pass.onblur = function() {
-        Pass.value = "密码";
-        Pass.type = "text";
+        var passtext = Pass.value;
+        if(passtext == ""){
+            Pass.value = "密码";
+            Pass.type = "text";
+        }
+        
     }
 }

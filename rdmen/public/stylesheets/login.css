@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/loginbg.png);
+    background-size: 100% 100%;
+}
+.login{
+    position: absolute;
+    width: 360px;
+    height: 400px;
+    margin-left: -180px;
+    margin-top: -200px;
+    background-color: rgb(139, 188, 228);
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+}
+.login .login-top{
+    position: relative;
+    float: left;
+    width: 360px;
+    height: 40px; 
+}
+.login .login-top .close{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    right: 20px;
+    background: url(../images/login-close.png) 0 0 no-repeat;
+    background-position: -56px -49px;
+    cursor: pointer;
+}
+.login .login-top .close:hover{
+    background: url(../images/login-close.png) 0 0 no-repeat;
+    background-position: -72px -49px;
+}
+.login .login-con{
+    float: left;
+    width: 300px;
+    height: 360px;
+    margin: 0 30px; 
+}
+.login .login-con .login-logo{
+    width: 300px;
+    height: 40px; 
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.login .login-con .login-inp{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ddd;
+}
+.login .login-con input#username{
+    width: 288px;
+    height: 40px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #858585;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.login .login-con input#password{
+    width: 288px;
+    height: 40px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #858585;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.login .login-con .auto{
+    display: block;
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.login .login-con .auto input{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+.login .login-con .auto label{
+    float: left;
+    height: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #000;
+}
+.login .login-con .djlogin{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #3584fa;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.login .login-con .login-link{
+    width: 300px;
+    height: 20px;
+}
+.login .login-con .login-link a{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #5335fa;
+}
+.login .login-con .login-link .link-left{
+    float: left;
+}
+.login .login-con .login-link a:hover{
+    color: #2e82ff;
+}
+.login .login-con .login-link .link-right{
+    float: right;
+}
+.login .login-con a.reg{
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto 0 auto;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #2e82ff;
+}

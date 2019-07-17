@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>锐度--注册页面</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheets/reg.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="zhuce">
+                <h1>用户注册：</h1>
+                <div class="zhuce-con">
+                    <div class="left">
+                        <span>用户名：</span>
+                        <span>密码：</span>
+                        <span>确认密码：</span>
+                        <span>性别：</span>
+                        <span>手机号：</span>
+                        <span>邮箱：</span>
+                        <span>上传头像：</span>
+                    </div>
+                    <div class="right">
+                        <form action="/reg" method="post" enctype="multipart/form-data">
+                            <input type="text" name="u" id="username" value="请输入用户名">
+                            <input type="text" name="p" id="password" value="请输入密码">
+                            <input type="text" name="cp" id="cpassword" value="请确认密码">
+                            <input type="text" name="s" id="sex" value="请输入性别">
+                            <input type="text" name="ph" id="phone" value="请输入电话">
+                            <input type="text" name="em" id="email" value="请输入邮箱">
+                            <input style="border:0;" type="file" name="pic" id="">
+                            <input  type="submit" class="zc" value="注册" name="register"></input>
+                            <a href="/login.html" class="fh">返回</a>
+                        </form>
+                        <span id="inof"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="info" style="width: 500px;height:40px;line-height:40px;font-size:20px;color:red;text-align:left;"></div> -->
+        <script src="javascripts/reg.js" async defer></script>
+    </body>
+</html>

@@ -1,4 +1,35 @@
 window.onload = function() {
+
+  var Wxin = document.getElementById("wxin");
+  var Ewm = document.getElementById("ewm");
+  Wxin.onmouseenter = function(){
+    Ewm.style.display = "block";
+  }
+  Wxin.onmouseleave = function(){
+    Ewm.style.display = "none";
+  }
+  var Sel = document.getElementById("sel");
+  var selUl = document.getElementById("selUl");
+  Sel.onmouseenter = function(){
+    selUl.style.display = "block";
+  }
+  Sel.onmouseleave = function(){
+    selUl.style.display = "none";
+  }
+
+  var searchIn = document.getElementById("searchIn");
+  searchIn.onfocus = function() {
+    var searchtext = searchIn.value;
+    if(searchtext == "搜索您需要的内容..."){
+      searchIn.value = "";
+    }
+  }
+  searchIn.onblur = function() {
+    var searchtext = searchIn.value;
+    if(searchtext == ""){
+      searchIn.value = "搜索您需要的内容...";
+    }
+  }
   //   导航栏功能
   function dropdownnav(ele) {
     var nav = document.getElementById(ele);

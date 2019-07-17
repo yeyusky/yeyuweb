@@ -1,0 +1,125 @@
+html,
+body {
+  background-color: #f7f7f7;
+}
+.main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.main .main-con {
+  overflow: hidden;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+.main .main-con .goods-link {
+  width: 1200px;
+  height: 20px;
+  margin: 10px 0;
+}
+.main .main-con .goods-link a.home {
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #999999;
+}
+.main .main-con .goods-link span {
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #999999;
+}
+.main .main-con .goods-link a.goods {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666666;
+}
+.main .main-con .goods-left {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  padding-top: 75px;
+}
+.main .main-con .goods-left .goods-leftp{
+  width: 380px;
+  height: 468px;
+  margin: 0 auto;
+}
+.main .main-con .goods-left .goods-leftp img{
+  width: 380px;
+}
+.main .main-con .goods-right {
+  overflow: hidden;
+  position: relative;
+  float: right;
+  width: 600px;
+  margin-top: 105px;
+}
+.main .main-con .goods-right h1{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  color: #333333;
+}
+.main .main-con .goods-right h2{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  font-size: 22px;
+  color: #666666;
+}
+.main .main-con .goods-right .goods-desc{
+  width: 100%;
+  height: 245px;
+}
+.main .main-con .goods-right .goods-desc p{
+  width: 100%;
+  height: 20px;
+  padding: 8px 0;
+}
+.main .main-con .goods-right .goods-desc p span.tdesc{
+  float: left;
+  display: block;
+  width: 90px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999999;
+  text-align: right;
+}
+.main .main-con .goods-right .goods-desc p span.cdesc{
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666666;
+}
+.main .main-con .goods-right a{
+  display: block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  margin: 50px 0 0 20px;
+  font-size: 16px;
+  color: #f7f7f7;
+  text-align: center;
+  background-color: #fd8900;
+}
+.main .goods-pic{
+  width: 100%;
+}
+.main .goods-pic img{
+  width: 100%;
+}

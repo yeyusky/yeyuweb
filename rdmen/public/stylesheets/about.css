@@ -1,0 +1,67 @@
+html,body{
+    background-color: #f7f7f7;
+}
+.main{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 30px;
+}
+.main .news-form{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main .news-form .news-link{
+    width: 1200px;
+    height: 20px;
+}
+.main .news-form .news-link a.home{
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #999999;
+}
+.main .news-form .news-link span{
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #999999; 
+}
+.main .news-form .news-link a.news{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+.main .news-form .about-title{
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+    margin: 50px 0 50px 0;
+}
+.main .news-form .about-title h1{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #666666;
+    font-weight: bold;
+}
+.main .news-form .about-title span{
+    font-size: 15px;
+    color: #666666;
+}
+.main .news-form .about-con{
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+    line-height: 24px;
+    margin: 0px auto;
+    padding: 0 0 120px 0;
+}
+.main .news-form .about-con img{
+    width: 755px;
+}

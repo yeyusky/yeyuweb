@@ -42,6 +42,15 @@ body {
   top: 8px;
   background-image: url(../images/wechat.png);
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+.top-left .ewm{
+  display: none;
+  position: absolute;
+  width: 127px;
+  height: 127px;
+  top: 25px;
+  left: 8px;
 }
 .top-right {
   float: right;
@@ -117,6 +126,17 @@ body {
   border: 1px solid #183b65;
 }
 .select {
+  position: relative;
+  width: 70px;
+  height: 33px;
+  background-color: #4e76a9;
+  line-height: 33px;
+  color: #cccccc;
+  font-size: 14px;
+  float: left;
+}
+.select a{
+  display: block;
   width: 60px;
   height: 33px;
   background-color: #4e76a9;
@@ -124,7 +144,42 @@ body {
   padding-left: 10px;
   color: #cccccc;
   font-size: 14px;
+}
+.select a i.selecticon{
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin: 13px 0 0 10px;
+  background: url(../images/selecticon.png) no-repeat;
+}
+.select ul{
+  display: none;
+  position: absolute;
+  width: 70px;
+  height: 99px;
+  top: 33px;
+  left: 0;
+  padding-top: 1px;
+  z-index: 2;
+}
+.select ul li{
   float: left;
+  width: 70px;
+  height: 33px;
+}
+.select ul li a{
+  display: block;
+  width: 70px;
+  height: 33px;
+  line-height: 33px;
+  padding-left: 0;
+  font-size: 14px;
+  color: #cccccc;
+  text-align: center;
+  background-color: #4e76a9;
+}
+.select ul li a:hover{
+  background-color: #6a8ebb;
 }
 .search {
   width: 220px;

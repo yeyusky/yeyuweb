@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>新闻发布页面</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .nt{
+                width: 600px;
+                height: 40px;
+                margin: 20px 0 0 20px;
+                padding-left: 30px;
+                font-size: 18px;
+                color: #000000;
+                border: 1px solid blue;
+                outline: none;
+            }
+            .nd{
+                width: 600px;
+                height: 40px;
+                margin: 20px 0 0 20px;
+                padding-left: 30px;
+                font-size: 16px;
+                color: #000000;
+                border: 1px solid blue;
+                outline: none;
+            }
+            .nc{
+                margin: 20px 0 0 20px;
+                padding-left: 20px;
+                font-size: 14px;
+                color: #000000;
+                border: 1px solid blue;
+                outline: none;
+            }
+            .btn{
+                width: 60px;
+                height: 30px;
+                margin: 20px 0 0 20px;
+                font-size: 16px;
+                color: #fff;
+                font-weight: bold;
+                background-color: #6565f0;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <form action="/admin/adnews" method="post">
+            <input type="text" name="nt" value="新闻标题" class="nt">
+            <br>
+            <input type="text" name="nd" value="新闻描述" class="nd">
+            <br>
+            <textarea name="nc" cols="120" rows="12" class="nc">新闻内容。。。</textarea>
+            <br>
+            <input type="submit" value="提交" class="btn">
+        </form>
+        <script src="" async defer></script>
+    </body>
+</html>

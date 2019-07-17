@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>锐度官网--登录页面</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/login.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="login">
+        <div class="login-top">
+            <a href="/" class="close"></a>
+        </div>
+        <div class="login-con">
+            <div class="login-logo">用户名密码登录</div>
+            <form action="/login" method="POST" class="login-inp">
+                <input type="text" value="用户名" id="username" name="u"/>
+                <input type="text" value="密码" id="password" name="p"/>
+                <span class="auto">
+                    <input type="checkbox" name="autoplay" id="autoplay" checked="checked" />
+                    <label for="autoplay">下次自动登录</label>
+                </span>
+                <input type="submit" src="images/login_bt.png" class="djlogin" value="登录" />
+            </form>
+            <div class="login-link">
+                <a href="#" class="link-left">忘记密码？</a>
+                <a href="#" class="link-right">短信快捷登录</a>
+            </div>
+            <a href="./reg.html" class="reg">立即注册</a>
+        </div>
+    </div>
+    <script src="javascripts/login.js" async defer></script>
+</body>
+
+</html>

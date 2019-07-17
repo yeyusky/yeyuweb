@@ -1,0 +1,66 @@
+html,body{
+    background-color: #f7f7f7;
+}
+.main{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 30px;
+}
+.main .news-form{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main .news-form .news-link{
+    width: 1200px;
+    height: 20px;
+}
+.main .news-form .news-link a.home{
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #999999;
+}
+.main .news-form .news-link span{
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #999999; 
+}
+.main .news-form .news-link a.news{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+.main .news-form .newsdetail-title{
+    width: 1200px;
+    margin-top: 30px;
+    padding: 24px 0;
+    border-bottom: 1px solid #dddddd;
+}
+.main .news-form .newsdetail-title h1{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333333;
+    font-weight: normal;
+}
+.main .news-form .newsdetail-title span{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+.main .news-form .newsdetail-con{
+    width: 1200px;
+    line-height: 24px;
+    margin: 0px auto;
+    padding: 38px 0 120px 0;
+    font-size: 14px;
+    color: #666666;
+}

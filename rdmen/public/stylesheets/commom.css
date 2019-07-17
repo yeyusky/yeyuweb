@@ -1,0 +1,333 @@
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html,body {
+  width: 100%;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+}
+.container{
+  overflow: hidden;
+  /* width: 100%; */
+}
+.container .header{
+  position: relative;
+  width: 100%;
+  height: 83px;
+  left: 0;
+  top: 0;
+  background: url(../images/rd-topbg.png) repeat-x;
+  z-index: 999;
+  /* background-color: inherit; */
+}
+.container .header .header-con{
+  position: relative;
+  width: 1200px;
+  height: 83px;
+  margin: 0 auto;
+}
+.container .header .header-con a.logo{
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 54px;
+  top: 14px;
+  left: 0;
+}
+.container .header .header-con ul{
+  position: absolute;
+  width: 864px;
+  height: 83px;
+  top: 0;
+  left: 140px;
+}
+.container .header .header-con ul li{
+  float: left;
+  width: 144px;
+  height: 83px;
+}
+.container .header .header-con ul li a{
+  display: block;
+  width: 144px;
+  height: 83px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 83px;
+  text-align: center;
+}
+.container .header .header-con ul li.point a{
+  color: #38beef;
+}
+.container .header .header-con ul li:hover a{
+  color: #38beef;
+}
+.container .header .header-con .login{
+  position: absolute;
+  width: 160px;
+  height: 83px;
+  right: 30px;
+  top: 0;
+}
+.container .header .header-con .login span{
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #999999;
+}
+.container .header .header-con .login span a{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #666666;
+}
+.container .header .header-con .login span img{
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.container .header .header-con .login span a:hover{
+  color: red;
+}
+.container .header .header-con .wxcode{
+  position: absolute;
+  width: 20px;
+  height: 31px;
+  right: 0;
+  top: 27px;
+  cursor: pointer;
+}
+.container .header .header-con .wxcode .code{
+  opacity: 0;
+  width: 110px;
+  height: 110px;
+  margin-top: 5px;
+  margin-left: -45px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.container .header .header-con .wxcode .code img{
+  width: 100%;
+}
+.container .header .subnav{
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 1369px;
+  height: 218px;
+  left: -225px;
+  /* padding-top: 20px; */
+  background: url(../images/rd-topbg.png) repeat;
+}
+.container .header .subnav .subnav-con{
+  position: relative;
+  width: 1046px;
+  height: 170px;
+  margin: 0 auto;
+}
+.container .header .subnav .subnav-con a#left{
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 51px;
+  top: 45px;
+  left: 0;
+  background: url(../images/rd-leftBtn.png) no-repeat;
+}
+.container .header .subnav .subnav-con a#right{
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 51px;
+  top: 45px;
+  right: 0;
+  background: url(../images/rd-rightBtn.png) no-repeat;
+}
+.container .header .subnav .subnav-con .navbox{
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+  height: 170px;
+  margin: 0 auto;
+}
+.container .header .subnav .subnav-con .navbox .nav-scroll{
+  position: absolute;
+  width: 3600px;
+  height: 170px;
+}
+.container .header .subnav .subnav-con .navbox .nav-scroll a{
+  position: relative;
+  float: left;
+  display: block;
+  width: 150px;
+  height: 170px;
+}
+.container .header .subnav .subnav-con .navbox .nav-scroll a img{
+  width: 100%;
+}
+.container .header .subnav .subnav-con .navbox .nav-scroll a span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;  
+}
+.container .header .header-con ul li  .shop-list{
+  overflow: hidden;
+  display: none;
+  position: relative;
+  width: 120px;
+  height: 73px;
+  top: -5px;
+  margin-left: 12px;
+}
+.container .header .header-con ul li .shop-list i.shop-icon{
+  display: block;
+  position: relative;
+  width: 9px;
+  height: 5px;
+  top:0;
+  left: 55px;
+  background: url(../images/shop-icon.png) no-repeat
+}
+.container .header .header-con ul li .shop-list a{
+  display: block;
+  float: left;
+  width: 120px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  background: url(../images/shopbg.png) repeat;
+}
+.container .header .header-con ul li .shop-list a:hover{
+  background: #38beef;
+	color: #ffffff;
+}
+.container .footer{
+  position: relative;
+  width: 100%;
+  height: 109px;
+  background-color: #262626;
+}
+.container .footer .footer-con{
+  width: 1200px;
+  height: 109px;
+  margin: 0 auto;
+  border-left: 1px solid #2d2d2d;
+  border-right: 1px solid #2d2d2d;
+}
+.container .footer .footer-con ul{
+  width: 100%;
+  height: 100%;
+}
+.container .footer .footer-con ul li{
+  position: relative;
+  float: left;
+  width: 239px;
+  height: 109px;
+  border-right: 1px solid #2d2d2d;
+}
+.container .footer .footer-con ul li.yk a,
+.container .footer .footer-con ul li.sina a,
+.container .footer .footer-con ul li.wx a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 35px 0 18px 55px;
+}
+.container .footer .footer-con ul li.yk span,
+.container .footer .footer-con ul li.sina span,
+.container .footer .footer-con ul li.wx span{
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 40px;
+  top: 35px;
+  right: 0;
+  font-size: 12px;
+  color: #999999;
+}
+.container .footer .footer-con ul li.yk span i,
+.container .footer .footer-con ul li.sina span i,
+.container .footer .footer-con ul li.wx span i{
+  font-style: normal;
+  color: #cccccc;
+}
+.container .footer .footer-con ul li.erwm a{
+  display: block;
+  width: 73px;
+  height: 73px;
+  margin: 18px 12px;
+}
+.container .footer .footer-con ul li.erwm span{
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 40px;
+  top: 35px;
+  right: 0;
+  font-size: 12px;
+  color: #999999;
+}
+.container .footer .footer-con ul li.erwm span i{
+  font-style: normal;
+  color: #cccccc;
+}
+.container .footer .footer-con ul li.subnews a{
+  display: block;
+  width: 210px;
+  height: 22px;
+  margin: 30px auto 0 auto;
+  line-height: 22px;
+  font-size: 12px;
+  color: #999999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container .bottom{
+  width: 100%;
+  height: 40px;
+  background-color: #000000;
+}
+.container .bottom .bottom-con{
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+}
+.container .bottom .bottom-con a{
+  float: left;
+  display: block;
+  width: 35px;
+  height: 40px;
+}
+.container .bottom .bottom-con img{
+  width: 35px;
+}
+.container .bottom .bottom-con .bottom-copy{
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666666;
+}
+.container .bottom .bottom-con .bottom-copy a{
+  float: right;
+  display: block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666666;
+  text-align: right;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <!-- class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>锐度首页</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/commom.css">
+    <link rel="stylesheet" href="stylesheets/sindex.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container">
+        <div class="header">
+            <div class="header-con">
+                <a href="javascript:;" class="logo">
+                    <img src="images/rd-logo.png" alt="锐度LOGO" />
+                </a>
+                <ul id="listUl">
+                    <li class="point"><a href="/">首页</a></li>
+                    <li id="cpdq">
+                        <a id="cpdqa" href="/goods">全系列产品</a>
+                        <div class="subnav" id="subnav">
+                            <div class="subnav-con">
+                                <a href="javascript:;" id="left"></a>
+                                <div class="navbox" id="navbox">
+                                    <div class="nav-scroll" id="nav-scroll" style="left:-1800px;">
+                                            <%for( var i =0; i<dt1.length;i++) {
+                                            %>
+                                        <a href="/goodslist?id=<%-(dt1[i].id + 9) %>"><img src="uploads/upload1/<%-dt1[i].pic %>"
+                                            alt="" /><span><%-dt1[i].bdesc %></span></a>
+                                            <%}%>
+                                            <%for( var i =0; i<dt1.length;i++) {
+                                            %>
+                                        <a href="/goodslist?id=<%-(dt1[i].id + 9) %>"><img src="uploads/upload1/<%-dt1[i].pic %>"
+                                            alt="" /><span><%-dt1[i].bdesc %></span></a>
+                                            <%}%>
+                                    </div>
+                                </div>
+                                <a href="javascript:;" id="right"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="/brand">品牌介绍</a></li>
+                    <li><a href="/news">公司新闻</a></li>
+                    <li id="shop">
+                        <a href="javascript:;">在线商城</a>
+                        <div class="shop-list" id="shop-list">
+                            <i class="shop-icon"></i>
+                            <a href="javascript:;">天猫店</a>
+                            <a href="javascript:;">京东店</a>
+                        </div>
+                    </li>
+                    <li><a href="/about">联系我们</a></li>
+                </ul>
+                <div class="login" id="login">
+                    <span><%-title %></span>
+                    
+                </div>
+                <div class="wxcode" id="wxcode">
+                    <img src="images/rd-wxcode.png" alt="微信二维码" />
+                    <div class="code" id="code">
+                        <img src="images/wxcodepic.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-lbbox" id="bannar">
+                <div id="lbbox" class="lbbox">
+                    <ul>
+                            <%for( var i =0; i<dt.length;i++) {
+                                %>
+                        <li><a href="javascript:;"><img src="uploads/<%-dt[i].pic %>" alt="1"></a>
+                        </li>
+                        <!-- <li><a href="javascript:;"><img src="images/rd_lbimg2.jpg" alt="1"></a></li>
+                        <li><a href="javascript:;"><img src="images/rd_lbimg3.jpg" alt="1"></a></li> -->
+                        <% } %>
+                    </ul>
+                </div>
+                <div id="lbbtn" class="lbbtn">
+                    <span style="left:0;top:0;" index="1" class="lbactive"></span>
+                    <span style="right:0;top:38px;" index="2"></span>
+                    <span style="left:0;bottom:0;" index="3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-con">
+                <ul>
+                    <li class="yk">
+                        <a href="javascript:;"><img src="images/yk.png" alt="" /></a>
+                        <span><i>锐度男士</i><br>优酷视频中心</span>
+                    </li>
+                    <li class="sina">
+                        <a href="javascript:;"><img src="images/sina.png" alt="" /></a>
+                        <span><i>锐度男士</i><br>官方微博</span>
+                    </li>
+                    <li class="wx">
+                        <a href="javascript:;"><img src="images/wx.png" alt="" /></a>
+                        <span><i>锐度男士</i><br>官方微信</span>
+                    </li>
+                    <li class="erwm">
+                        <a href="javascript:;"><img src="images/code.png" alt="" /></a>
+                        <span><i>关注锐度运动</i><br>做对身材有要求的男人</span>
+                    </li>
+                    <li class="subnews">
+                        <a href="javascript:;">1、锐度联手微盟打造微商第一男士护肤品牌</a>
+                        <a href="javascript:;" style="margin-top: 0;">2、锐度——锐跑公益跑团 时尚 Fun Run</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-con">
+                <a href="javascript:;">
+                    <img src="images/icon.gif" alt="">
+                </a>
+                <div class="bottom-copy">© 2015 锐度男士护肤品 <a href="javascript:;">沪ICP备15024497号-1</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="javascripts/jquery-1.11.3.min.js"></script>
+    <script src="javascripts/commom.js"></script>
+    <script src="javascripts/sindex.js"  async defer></script>
+</body>
+
+</html>
